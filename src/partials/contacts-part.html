@@ -1,0 +1,50 @@
+<section class="section contacts-part">
+    <div class="container contacts-part__container">
+        <h1 class="contacts-part__title">Сontacts</h1>
+        <svg class="contacts-part__icon" width="" height="">
+            <use href="/"></use>
+        </svg>
+        <picture>
+            <source media="(min-width: 1280px)"
+            srcset="./images/contacts/img_contacts-dec@1x.jpg 1x, ./images/contacts/img_contacts-dec@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+            srcset="./images/contacts/img_contacts-tab@1x.jpg 1x, ./images/contacts/img_contacts-tab@2x.jpg 2x">
+            <source media="(min-width: 320px)"
+            srcset="./images/contacts/img_contacts-mb@1x.jpg 1x, ./images/contacts/img_contacts-mb@2x.jpg 2x">
+        <img src="./images/contacts/img_contacts-mb@1x.jpg" 
+        alt="Клавіатура з джойстиком">
+        </picture>
+        <p class="contacts-part__text">
+        In case of queries about order handling and/or delay, drop us an email at        
+        info@shopforgamers.com</p>
+        <ul class="contacts-part list">
+            <li class="contacts-part__item">
+                <a class="contacts-part__link" href="mailto:sfg.info@gmail.com">Sfg.info@gmail.com</a>
+            </li>
+                <a class="contacts-part__link" href="tel:+380936432288">+38 (093) 643 22 88</a>
+                <a class="contacts-part__link" href="tel:+380503454423">+38 (050) 345 44 23</a>
+            <li class="contacts-part__item"></li>
+        </ul>
+    </div>
+
+    <div class="contacts-form">       
+        <form class="register-form" name="register-form">
+            <strong class="register-form__title">CONTACT US</strong>
+            <div class="register-form__group" role="group">
+            <label class="register-form__field">                
+                <input class="register-form__input" type="text" name="user-name" placeholder="Name" required>
+            </label>
+            <label class="register-form__field">
+                <input class="register-form__input" type="email" name="user-email" placeholder="Email" required>
+            </label>
+            <label class="register-form__field">
+                <span class="register-form__heading">Leave your message</span>
+                <textarea class="register-form__message" name="comment" rows="5"></textarea>
+            </label>
+            </div>
+            <button class="register-form__btn" type="submit">SEND</button>            
+        </form>
+    </div>
+</section>
+
+
