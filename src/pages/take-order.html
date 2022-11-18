@@ -1,19 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Take order</title>
-  <!-- Лінк на фавікон
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Take order</title>
+    <!-- Лінк на фавікон
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon" > -->
-  <link rel="stylesheet" href="./sass/main.scss">
-</head>
-<body>
-  <include src="./partials/header.html"></include>
-  <main>
-    <include src="./partials/take-order-part.html"></include>
-  </main>
-  <include src="./partials/footer.html"></include>
-</body>
+    <link rel="stylesheet" href="./sass/main.scss" />
+  </head>
+  <body>
+    <include src="./partials/header.html"></include>
+    <main>
+      <include src="./partials/take-order-part.html"></include>
+    </main>
+    <include src="./partials/footer.html"></include>
+    <section class="take-order">
+      <container class="container">
+        <strong class="order">Take order</strong>
+        <div class="wrap">
+          <h2 class="wrap__title">Xiberia K9 PRO PC Headset</h2>
+          <div class="subwrap">
+            <img class="image" src=""></img>
+            <p class="price old-price">65.14 USD</p>
+            <p class="price new-price">55.14 USD</p>
+          </div>
+          <div class="card-set">
+            <ul class="list card-set-list">
+            <li class="item item-card-set">
+              <img class="image img-card-set" src="" alt="">
+            </li>
+            <li class="item item-card-set">
+              <img class="image img-card-set" src="" alt="">
+            </li>
+            <li class="item item-card-set">
+              <img class="image img-card-set" src="" alt="">
+            </li>
+            <li class="item item-card-set">
+               <img class="image img-card-set" src="" alt="">
+            </li>
+            </ul>
+          </div>
+          <div class="wrap wrap-form">
+            <form class="form  form-order">
+              <h3 class="title form-title">CONTACT US</h3>
+              <div class="wrap wrap-inputs">
+                <label class="label">Name
+                  <input class="input input-field" name="username">
+                </label>
+                <label class="label">Email
+                  <input class="input input-field" name="email">
+                </label>
+                <label class="label">Color Option
+                  <input class="input input-field" name="option">
+                </label>
+                <label class="label">Quantity
+                  <input class="input input-field" name="quantity">
+                </label>
+                <label class="label">Payment
+                  <input class="input input-field" name="payment">
+                </label>
+                <label class="label">Leave your message
+                  <textarea class="message" type="text">
+                  </textarea>
+                </label>
+              </div>
+              <div class="subwrap subwrap-btn">
+                <button type="button" class="btn btn-light">buy it now</button>
+                <button type="button" class="btn btn-dark">ADD TO CART</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </container>
+    </section>
+  </body>
 </html>
