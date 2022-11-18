@@ -29,8 +29,12 @@
 }
 
 .header__list {
-   display: flex;
-   gap: 48px;
+   display: none;
+
+   @include tablet {
+      display: flex;
+      gap: 48px;
+   }
 }
 
 .header__item {
@@ -51,3 +55,12 @@
    }
 }
 
+.menu-open-btn {
+   margin-left: auto;
+   background-color: transparent;
+   border: none;
+
+   @include desktop {
+      display: none;
+   }
+}
