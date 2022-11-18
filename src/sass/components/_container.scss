@@ -4,10 +4,6 @@
    padding-left: 16px;
    padding-right: 16px;
 
-   @include mobile {
-      width: 320px;
-   }
-
    @include tablet {
       width: 768px;
       padding-left: 40px;
