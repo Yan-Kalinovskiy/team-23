@@ -1,0 +1,23 @@
+@import './utils/variables';
+@import './utils/reset';
+@import './utils/hidden';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+@import './components/common';
+@import './components/background';
+@import './components/logo';
+@import './components/mob&tab-menu';
+@import './components/btn';
+@import './components/cards';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/gallery';
+@import './layouts/sale';
+@import './layouts/accessories';
+@import './layouts/take-order';
+@import './layouts/contacts';
+@import './layouts/blog';
+@import './layouts/blog-article';
+@import './layouts/footer';
