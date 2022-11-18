@@ -1,0 +1,16 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+@font-face {
+  
+}
+
+body {
+  color: $main-text-color;
+  font-family: $basic-font;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
