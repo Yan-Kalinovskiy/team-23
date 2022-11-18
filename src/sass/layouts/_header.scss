@@ -1,4 +1,5 @@
 .header {
+   display: flex;
    height: 136px;
    background: #01383A;
    box-shadow: 0px 4px 10px rgba(97, 162, 58, 0.2),
@@ -10,10 +11,11 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
+
 }
 
 .header__logo-text {
-   display: block;
+   width: 121px;
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 700;
@@ -24,8 +26,6 @@
 }
 
 .header__menu-nav {
-   display: flex;
-      align-items: center;
 }
 
 .header__list {
@@ -46,6 +46,7 @@
 }
 
 .header__btn {
+   display: block;
    font-family: 'Roboto';
    font-style: normal;
    font-weight: 700;
@@ -56,4 +57,11 @@
    padding: 16px 20px;
    background: #86E543;
    border-radius: 16px;
+
+   &:hover
+   &:focus{
+      color: #86E543;
+      box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+   }
 }
