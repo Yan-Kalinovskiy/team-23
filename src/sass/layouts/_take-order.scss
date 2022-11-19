@@ -1,16 +1,16 @@
 .take-order {
 
-    background-image: url('./images/background/order_mob.jpg');
+    background-image: url('../images/background/order_mob.jpg');
     background-size: cover;
     background-position: center;
     font-family: $basic-font;
 
     @include tablet {
-        background-image: url('./images/background/order_tab.jpg');
+        background-image: url('../images/background/order_tab.jpg');
     }
 
     @include desktop {
-        background-image: url('./images/background/order_desk.jpg');
+        background-image: url('../images/background/order_desk.jpg');
     }
 
 }
