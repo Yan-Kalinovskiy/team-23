@@ -1,10 +1,14 @@
 .header {
    display: flex;
-   height: 136px;
+   height: 104px;
    background: #01383A;
    box-shadow: 0px 4px 10px rgba(97, 162, 58, 0.2),
    0px 4px 50px rgba(94, 236, 54, 0.5),
    0px 4px 4px rgba(17, 168, 26, 0.2);
+
+   @include tablet {
+      height: 136px;
+   }
 }
 
 .header>.container {
@@ -15,7 +19,7 @@
 }
 
 .header__logo-text {
-   width: 121px;
+   width: 115px;
    font-family: 'Roboto';
    font-style: normal;
    font-weight: 700;
@@ -23,6 +27,13 @@
    line-height: 1.16;
    text-align: center;
    color: $main-text-color;
+
+   @include tablet {
+      width: 156px;
+   }
+   @include desktop {
+      width: 121px;
+   }
 }
 
 .header__menu-nav {
@@ -31,7 +42,7 @@
 .header__list {
    display: none;
 
-   @include tablet {
+   @include desktop {
       display: flex;
       gap: 48px;
    }
@@ -55,12 +66,75 @@
    }
 }
 
-.menu-open-btn {
-   margin-left: auto;
-   background-color: transparent;
-   border: none;
+//mob-menu ---------------------------------- //
 
-   @include desktop {
+.menu__btn {
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+   border: none;
+   background-color: transparent;
+
+   & .icon__close {
       display: none;
    }
 }
+
+.menu__btn.is__open .icon__close {
+   display: block;
+}
+
+.menu__btn.is__open .icon__open {
+   display: none;
+}
+
+//.menu-open-btn {
+//   margin-left: auto;
+//   background-color: transparent;
+//   border: none;
+//   width: 54px;
+//   height: 36px;
+
+//   @include desktop {
+//      display: none;
+//   }
+//}
+
+.mob__menu {
+   display: none;
+
+   @media screen and (min-width: 768px) {
+
+   }
+   //position: fixed;
+   //top: 0;
+   //background-repeat: no-repeat;
+   //background-position: center;
+   //background-size: cover;
+   //background-image: url('/src/images/header/bg-m-1x.jpg');
+}
+
+//.menu__close-btn {
+//   display: block;
+//   margin-left: auto;
+//   background-color: transparent;
+//   border: none;
+//   width: 36px;
+//   height: 36px;
+//}
+
+//.mob-menu__list {}
+
+//.mob-menu__item {}
+
+//.mob-menu__link {
+//   font-family: 'Roboto';
+//font-style: normal;
+//font-weight: 700;
+//font-size: 24px;
+//line-height: 28px;
+//text-align: right;
+//text-transform: uppercase;
+
+//color: #FFFFFF;
+//}
