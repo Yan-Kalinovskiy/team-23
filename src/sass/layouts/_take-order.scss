@@ -1,0 +1,161 @@
+.take-order {
+
+    background-image: url('./images/background/order_mob.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: $basic-font;
+
+    @include tablet {
+        background-image: url('./images/background/order_tab.jpg');
+    }
+
+    @include desktop {
+        background-image: url('./images/background/order_desk.jpg');
+    }
+
+}
+
+.order {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+
+    @include tablet {
+        font-size: 56px;
+        line-height: 66px;
+    }
+}
+
+.wrap__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+
+    @include tablet {
+        font-size: 56px;
+        line-height: 66px;
+    }
+}
+
+.old-price {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration-line: line-through;
+    color: #8D9289;
+
+    @include tablet {
+        font-size: 24px;
+    }
+}
+
+.new-price {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 100%;
+    color: #86E543;
+
+    @include tablet {
+        font-size: 48px;
+    }
+}
+
+.form-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #86E543;
+    text-transform: uppercase;
+
+    @include tablet {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+}
+
+.label-f {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+
+    @include tablet {
+        font-size: 18px;
+
+    }
+}
+
+.label-t {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #CDCDCD;
+
+    @include tablet {
+        font-size: 18px;
+    }
+}
+
+.input-field {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #86E543;
+
+    @include desktop {
+        width: 590px;
+    }
+}
+
+.message {
+    height: 95px;
+    width: 100%;
+    border: 1px solid #86E543;
+    resize: none;
+
+    @include tablet {
+        height: 256px;
+    }
+
+    @include desktop {
+        width: 589px;
+        height: 256px;
+    }
+
+}
+
+.subwrap-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    padding: 16px 42px;
+    border-radius: 16px;
+    cursor: pointer;
+
+    @include tablet {
+        font-size: 32px;
+        line-height: 38px;
+        padding: 16px 64px;
+    }
+
+    transform: box-shadow 0px 4px 10px rgba(97, 162, 58, 0.2),
+    0px 4px 50px rgba(94, 236, 54, 0.5),
+    0px 4px 4px rgba(17, 168, 26, 0.2);
+
+}
+
+.btn-light {
+    color: #01383A;
+    background-color: #86E543;
+
+}
+
+.btn-dark {
+    color: #86E543;
+    background-color: transparent;
+    border: 1px solid #86E543;
+}
