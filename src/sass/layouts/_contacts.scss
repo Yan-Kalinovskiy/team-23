@@ -1,0 +1,10 @@
+.contacts-part {
+    padding-top: 40px;
+    padding-bottom: 48px;
+    background: #01383A;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
