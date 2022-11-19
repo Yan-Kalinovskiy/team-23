@@ -1,8 +1,5 @@
 .hero {
-  background-color: #01383a;
-
   @include tablet {
-    // max-width: 768px;
     margin: 0 auto;
   }
 
