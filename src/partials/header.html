@@ -12,23 +12,23 @@
          </ul>
       </nav>
       <a class="header__btn link" href="#">Shop now</a>
-      <button class="menu__btn is__open" type="button">
-         <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+      <button type="button" class="menu__btn" aria-expanded="false" data-menu-btn>
+         <svg width="40" height="40" aria-label="Переключатель мобильного меню" aria-controls="mob__menu">
             <use class="icon__close" href="./images/header/symbol-defs.svg#icon-btn-close"></use>
             <use class="icon__open" href="./images/header/symbol-defs.svg#icon-btn-open"></use>
          </svg>
       </button>
+      <div class="mob__menu" id="mob__menu" data-menu>
+         <ul class="mob-menu__list list">
+            <li class="mob-menu__item"><a class="mob-menu__link link" href="#">Accessories</a>
+            </li>
+            <li class="mob-menu__item"><a class="mob-menu__link link" href="#">Take order</a>
+            </li>
+            <li class="mob-menu__item"><a class="mob-menu__link link" href="#">Contact</a>
+            </li>
+            <li class="mob-menu__item"><a class="mob-menu__link link" href="#">Blog</a>
+            </li>
+         </ul>
+      </div>
    </div>
-   <!--<div class="mob__menu">
-      <ul class="mob-menu__list list">
-         <li class="mob-menu__item"><a class="mob-menu__link link" href="#">Accessories</a>
-         </li>
-         <li class="mob-menu__item"><a class="mob-menu__link link" href="#">Take order</a>
-         </li>
-         <li class="mob-menu__item"><a class="mob-menu__link link" href="#">Contact</a>
-         </li>
-         <li class="mob-menu__item"><a class="mob-menu__link link" href="#">Blog</a>
-         </li>
-      </ul>
-   </div>-->
 </header>

@@ -1,7 +1,7 @@
 .header__btn {
    display: none;
 
-   @include desktop {
+   @include tablet {
       display: block;
       font-family: 'Roboto';
       font-style: normal;

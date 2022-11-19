@@ -1,4 +1,5 @@
 .header {
+   position: relative;
    display: flex;
    height: 104px;
    background: #01383A;
@@ -75,9 +76,16 @@
    border: none;
    background-color: transparent;
 
-   & .icon__close {
+   @media screen and (min-width: 768px) {
+      display: flex;
+   }
+   @include desktop {
       display: none;
    }
+}
+
+.menu__btn .icon__close {
+   display: none;
 }
 
 .menu__btn.is__open .icon__close {
@@ -88,53 +96,35 @@
    display: none;
 }
 
-//.menu-open-btn {
-//   margin-left: auto;
-//   background-color: transparent;
-//   border: none;
-//   width: 54px;
-//   height: 36px;
-
-//   @include desktop {
-//      display: none;
-//   }
-//}
-
 .mob__menu {
    display: none;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   text-align: center;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-image: url('/src/images/header/bg-m-1x.jpg');
 
-   @media screen and (min-width: 768px) {
-
+   &.is__open {
+      display: block;
    }
-   //position: fixed;
-   //top: 0;
-   //background-repeat: no-repeat;
-   //background-position: center;
-   //background-size: cover;
-   //background-image: url('/src/images/header/bg-m-1x.jpg');
 }
-
-//.menu__close-btn {
-//   display: block;
-//   margin-left: auto;
-//   background-color: transparent;
-//   border: none;
-//   width: 36px;
-//   height: 36px;
-//}
 
 //.mob-menu__list {}
 
 //.mob-menu__item {}
 
-//.mob-menu__link {
-//   font-family: 'Roboto';
-//font-style: normal;
-//font-weight: 700;
-//font-size: 24px;
-//line-height: 28px;
-//text-align: right;
-//text-transform: uppercase;
-
-//color: #FFFFFF;
-//}
+.mob-menu__link {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 1.16;
+   text-align: right;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
