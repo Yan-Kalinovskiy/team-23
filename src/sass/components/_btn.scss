@@ -1,0 +1,22 @@
+.header__btn {
+   display: none;
+
+   @include desktop {
+      display: block;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1;
+      color: #000000;
+      padding: 16px 20px;
+      background: #86E543;
+      border-radius: 16px;
+         
+      &:hover,
+      &:focus {
+         box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+         0px 4px 10px rgba(255, 255, 255, 0.1);
+      }
+   }
+}
