@@ -1,4 +1,6 @@
 .header {
+   display: flex;
+   height: 136px;
    background: #01383A;
    box-shadow: 0px 4px 10px rgba(97, 162, 58, 0.2),
    0px 4px 50px rgba(94, 236, 54, 0.5),
@@ -9,16 +11,18 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
+
 }
 
 .header__logo-text {
-   font-family: 'Roboto';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 24px;
-   line-height: 1.16;
-   text-align: center;
-   color: $main-text-color;
+   width: 121px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.16;
+      text-align: center;
+      color: $main-text-color;
 }
 
 .header__menu-nav {
@@ -26,9 +30,11 @@
 
 .header__list {
    display: flex;
+   gap: 48px;
 }
 
-.header__item {}
+.header__item {
+}
 
 .header__link {
    font-family: 'Roboto';
@@ -37,17 +43,11 @@
    font-size: 16px;
    line-height: 1;
    color: $main-text-color;
+   padding-bottom: 8px;
+
+   &:hover {
+      box-sizing: border-box;
+      border-bottom: 1px solid #86E543;
+   }
 }
 
-.header__btn {
-   font-family: 'Roboto';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 1;
-   text-align: right;
-   color: #000000;
-   padding: 16px 20px;
-   background: #86E543;
-   border-radius: 16px;
-}
