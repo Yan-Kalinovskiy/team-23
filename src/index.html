@@ -13,11 +13,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
     <!-- Лінки на передзавантаження шрифтів -->
-    <link rel="preload" href="./fonts/Roboto-Regular.ttf" as="font">
-    <link rel="preload" href="./fonts/Roboto-Bold.ttf" as="font">
-    <link rel="preload" href="./fonts/OpenSans-SemiBold.ttf" as="font">
+    <link rel="preload" href="./fonts/Roboto-Regular.ttf" as="font" />
+    <link rel="preload" href="./fonts/Roboto-Bold.ttf" as="font" />
+    <link rel="preload" href="./fonts/OpenSans-SemiBold.ttf" as="font" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./sass/main.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <include src="./partials/header.html"></include>
@@ -25,7 +28,7 @@
       <include src="./partials/hero.html"></include>
       <include src="./partials/gallery.html"></include>
       <include src="./partials/sale.html"></include>
-<!-- тимчасове підключення -->
+      <!-- тимчасове підключення -->
       <include src="./partials/accessories-part.html"></include>
       <include src="./partials/blog-article-part.html"></include>
       <include src="./partials/blog-part.html"></include>
@@ -35,5 +38,10 @@
       <include src="./partials/modal-contacts.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
+      type="module"
+    ></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
