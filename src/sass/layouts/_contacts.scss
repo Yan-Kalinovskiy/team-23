@@ -9,6 +9,12 @@
     }
 }
 
+.contacts-part__image {
+    @include tablet {
+        border-radius: 12px;
+    }          
+}
+
 .contacts-part__title {
     margin-bottom: 4px;
     font-weight: 600;
@@ -80,6 +86,18 @@
     }
 }
 
+.contacts-part__item {
+    margin-right: 141px;
+
+    @include tablet {
+        margin-right: 217px;
+    }
+    
+    @include desktop {
+        margin-right: 392;
+    }
+}
+
 .contacts-part__item:not(:last-child) {    
     margin-bottom: 24px;
 
@@ -127,6 +145,10 @@
 }
 
 .register-form {
+    @include tablet {
+        margin: 0 48px;
+       
+    }
 }
 
 .register-form__title {
@@ -178,4 +200,28 @@
     display: block;
     background-color: $green-text-color;    
     border: 1px solid #86E543;
+}
+
+.register-form__btn {
+    width: 173px;
+    margin-top: 24px;
+    padding: 16px 20px;
+    background-color: $green-text-color;
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+    color: $main-text-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(19 / 16);  
+       
+    @include tablet {
+        width: 306px;
+        margin-top: 34px;
+        font-size: 32px;
+        line-height: calc(38 / 32);
+    }      
+
+    @include desktop {            
+        margin-top: 47px;            
+    }
 }
