@@ -44,11 +44,13 @@
 .contacts-part__contacts {
     margin-bottom: 24px;
     @include tablet {
-        margin-right: 200px;
-    }
+       margin-bottom: 40px;
+       margin-right: 200px;
+   }
 
     @include desktop {
-        margin-right: 122px;
+       margin-bottom: 0;
+       margin-right: 122px;
     }
 }
 
@@ -78,7 +80,7 @@
     }
 }
 
-.contacts-part__item:not(:last-child) {
+.contacts-part__item:not(:last-child) {    
     margin-bottom: 24px;
 
     @include tablet {
@@ -98,13 +100,14 @@
     color: $main-text-color;
 
     @include tablet {
-        padding-bottom: 0;
+        // padding-bottom: 0;
         font-size: 24px;
         line-height: calc(28 / 24);
     }
 }
 
 .contacts-part__link {
+    display: block;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19 / 16);
@@ -119,12 +122,12 @@
 
 .contacts-form {    
     @include desktop {
-        display: flex;
+        // display: flex;
     }
 }
 
 .register-form {
-    width: 289px;
+    // width: 289px;
 }
 
 .register-form__title {
@@ -140,11 +143,11 @@
 }
 
 .register-form__group {
-    margin-top: 16px;    
+    // margin-top: 16px;    
 }
 
 .register-form__input {
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
 
     font-weight: 400;
     font-size: 16px;
@@ -165,8 +168,7 @@
         }
 }
 
-.register-form__heading {
-    
+.register-form__heading {    
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 / 16);
