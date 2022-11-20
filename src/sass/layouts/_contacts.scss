@@ -1,4 +1,5 @@
 .contacts-part {
+    margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 48px;
     background: $green-text-color;
@@ -7,9 +8,22 @@
         padding-top: 120px;
         padding-bottom: 120px;
     }
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+        
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 100%;
+    }
 }
 
 .contacts-part__image {
+    width: 100%;
     @include tablet {
         border-radius: 12px;
     }          
@@ -44,6 +58,7 @@
     @include desktop {        
         margin-top: 59px;
         display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -51,12 +66,12 @@
     margin-bottom: 24px;
     @include tablet {
        margin-bottom: 40px;
-       margin-right: 200px;
+    //    margin-right: 200px;
    }
 
     @include desktop {
        margin-bottom: 0;
-       margin-right: 122px;
+       margin-right: 0;
     }
 }
 
@@ -68,8 +83,12 @@
 
     @include tablet {        
         font-size: 24px;
-        line-height: calc(28 / 24);        
-    }        
+        line-height: calc(28 / 24);                
+    }     
+    
+    @media screen and (min-width: 1280px) {
+        width: 488px;
+    }
 }
 
 .contacts-part_list {
@@ -87,14 +106,14 @@
 }
 
 .contacts-part__item {
-    margin-right: 141px;
+    // margin-right: 141px;
 
     @include tablet {
-        margin-right: 217px;
+        margin-right: 32px;
     }
     
     @include desktop {
-        margin-right: 392;
+        margin-right: 0;
     }
 }
 
@@ -146,8 +165,11 @@
 
 .register-form {
     @include tablet {
-        margin: 0 48px;
-       
+        margin: 0 48px;       
+    }
+
+    @include desktop {
+        margin: 0;
     }
 }
 
@@ -165,9 +187,11 @@
 
 .register-form__group {
     margin-top: 16px;    
+    width: 100%;
 }
 
 .register-form__input {
+    width: 100%;
     margin-bottom: 40px;
 
     font-weight: 400;
@@ -187,6 +211,10 @@
     &::-moz-placeholder {
             color: $main-text-color;
         }
+
+    @media screen and (min-widh: 1280px) {
+        width: 591px;
+    }
 }
 
 .register-form__heading {    
@@ -197,6 +225,7 @@
 }
 
 .register-form__message {
+    width: 100%;
     display: block;
     background-color: $green-text-color;    
     border: 1px solid #86E543;
