@@ -1,26 +1,54 @@
 .container-article {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 56px;
-        line-height: 1;
+        position: absolute;
+        background-image: url(../images/background/article_background.png);
+}
 
+.container-article__header {
+        font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 56px;
+                line-height: 1;
         color: $main-text-color;
 }
 
-.container-article__header {}
+.container-article__image {
+        width: 387px;
+        height: 336px;
+        border-radius: 12px;
+}
 
-.container-article__image {}
+.container-article__thumb {
+        padding: 40px;
+}
 
-.container-article__second-header {}
+.container-article__second-header {
+        font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 1;
+        color: $secondary-text-color;
+}
 
 .container-article__date {}
 
 .container-article__text {}
 
-.container-article__third-header {}
+.container-article__req {}
 
-.container-article__list {}
+.container-article__third-header {
+        color: $secondary-text-color;
+}
+
+.container-article__list {
+        font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 1.16;
+        color: $secondary-text-color;
+}
 
 .container-article__list-item {}
 
