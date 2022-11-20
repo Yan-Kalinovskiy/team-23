@@ -4,7 +4,7 @@
 }
 
 .container-article__header {
-        font-family: 'Roboto';
+        font-family: $basic-font;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 56px;
@@ -13,8 +13,13 @@
 }
 
 .container-article__image {
-        width: 387px;
-        height: 336px;
+        position: absolute;
+                width: 387px;
+                height: 336px;
+                width: 387px;
+                height: 336px;
+                left: 40px;
+                top: 411px;
         border-radius: 12px;
 }
 
@@ -23,7 +28,7 @@
 }
 
 .container-article__second-header {
-        font-family: 'Roboto';
+        font-family: $basic-font;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 24px;
@@ -31,18 +36,27 @@
         color: $secondary-text-color;
 }
 
-.container-article__date {}
+.container-article__date {
+        font-family: $basic-font;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 1;
+        color: $grey-text-color;
+}
 
 .container-article__text {}
 
-.container-article__req {}
+.container-article__req {
+        padding: 48 40px;
+}
 
 .container-article__third-header {
         color: $secondary-text-color;
 }
 
 .container-article__list {
-        font-family: 'Roboto';
+        font-family: $basic-font;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 24px;
@@ -52,4 +66,11 @@
 
 .container-article__list-item {}
 
-.container-article__second-text {}
+.container-article__second-text {
+        font-family: $basic-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 1.16;
+        color: $main-text-color;
+}
