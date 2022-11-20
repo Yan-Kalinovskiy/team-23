@@ -122,12 +122,11 @@
 
 .contacts-form {    
     @include desktop {
-        // display: flex;
+        display: flex;
     }
 }
 
 .register-form {
-    // width: 289px;
 }
 
 .register-form__title {
@@ -143,11 +142,11 @@
 }
 
 .register-form__group {
-    // margin-top: 16px;    
+    margin-top: 16px;    
 }
 
 .register-form__input {
-    // margin-bottom: 40px;
+    margin-bottom: 40px;
 
     font-weight: 400;
     font-size: 16px;
@@ -176,6 +175,7 @@
 }
 
 .register-form__message {
+    display: block;
     background-color: $green-text-color;    
     border: 1px solid #86E543;
 }
