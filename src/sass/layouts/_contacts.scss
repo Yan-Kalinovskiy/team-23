@@ -1,10 +1,106 @@
 .contacts-part {
     padding-top: 40px;
     padding-bottom: 48px;
-    background: #01383A;
+    background: $green-text-color;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+}
+
+.contacts-part__title {
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    color: $main-text-color;
+
+    @include tablet {
+        margin-bottom: 8px;
+        margin-left: 59px;
+        font-size: 56px;
+        line-height: calc(66 / 56);
+    }
+
+    @include desktop {
+        margin-left: 102px;
+    }
+}
+
+.contacts-part__contacts {
+    @include tablet {
+        margin-right: 200px;
+    }
+
+    @include desktop {
+        margin-right: 122px;
+    }
+}
+
+.contacts-part__text {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    color: $main-text-color;
+
+    @include tablet {
+        margin-top: 32px;
+        font-size: 24px;
+        line-height: calc(28 / 24);
+    }
+
+    @include desktop {
+        margin-top: 59px;        
+    }
+}
+
+.contacts-part_list {
+    margin-top: 24px;    
+    
+    @include tablet {
+        margin-top: 32px;            
+    }
+    
+    @include desktop {
+        margin-top: 59px;
+    }
+}
+
+.contacts-part__item:not(:last-child) {
+    margin-bottom: 24px;
+
+    @include tablet {
+        margin-bottom: 0;
+    }
+
+    @include desktop {
+        margin-bottom: 40px;
+    }
+}
+
+.contacts-part__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    color: $main-text-color;
+
+    @include tablet {
+        font-size: 24px;
+        line-height: calc(28 / 24);
+    }
+}
+
+.contacts-part__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    color: $grey-text-color;
+    text-decoration: none;
+
+    @include tablet {
+        font-size: 24px;
+        line-height: calc(28 / 24);
     }
 }
