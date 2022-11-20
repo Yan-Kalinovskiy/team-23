@@ -18,7 +18,7 @@
   min-height: 367px;
   background-color: #01383a;
   transition: transform 500ms linear, visibility 500ms linear,
-      opacity 500ms linear;
+    opacity 500ms linear;
 
   @include mobile {
     padding: 88px 40px;
@@ -37,15 +37,14 @@
     padding: 88px 80px;
   }
 
-    // // //Для коректної роботи y-scroll на модалці
-    // @media screen and (max-height: 479px) {
-    //   top: calc(50% + 145px);
-    // }
-  
-    // @media screen and (min-height: 480px) and (max-height: 620px) {
-    //   top: calc(50% + 80px);
-    // }
-    // // //
+  // Для коректної роботи y-scroll
+  @media screen and (max-height: 439px) {
+    top: calc(50% + 80px);
+  }
+
+  @media screen and (min-height: 440px) and (max-height: 525px) {
+    top: calc(50% + 20px);
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -110,6 +109,7 @@
     font-size: 32px;
   }
   &:hover {
-    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
   }
 }
