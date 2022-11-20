@@ -12,45 +12,58 @@
 .hero__container {
   padding: 0;
 
-  background-image: url(../images/hero-bg/m-hero-bg-mouse.png),
-    url(../images/hero-bg/m-hero-bg-headset.png),
-    url(../images/hero-bg/m-hero-bg-keyboard.png),
-    url(../images/hero-bg/background-hero.png);
+  background-image: url(../images/hero-bg/img_hero-bg-mouse_1x.png),
+    url(../images/hero-bg/img_hero-bg-headset_1x.png),
+    url(../images/hero-bg/img_hero-bg-key_1x.png),
+    url(../images/hero-bg/img_hero-bg_1x.jpg);
   background-repeat: no-repeat;
   background-blend-mode: luminosity;
   background-position: 5% 35%, 105% 15%, 70% 95%, 77%;
   background-size: 99px, 186px, 88px, cover;
 
   @include retina {
-    background-image: url(../images/hero-bg/m-hero-bg-mouse@2x.png),
-      url(../images/hero-bg/m-hero-bg-headset@2x.png),
-      url(../images/hero-bg/m-hero-bg-keyboard@2x.png),
-      url(../images/hero-bg/background-hero@2x.png);
+    background-image: url(../images/hero-bg/img_hero-bg-mouse_2x.png),
+      url(../images/hero-bg/img_hero-bg-headset_1x.png),
+      url(../images/hero-bg/img_hero-bg-key_2x.png),
+      url(../images/hero-bg/img_hero-bg_2x.jpg);
   }
 
   @include tablet {
-    background-image: url(../images/hero-bg/t-hero-bg.png),
-      url(../images/hero-bg/t-background-hero.png);
+    background-image: url(../images/hero-bg/img_hero-bg_2t_1x.png),
+      url(../images/hero-bg/img_hero-bg_t_1x.png);
+
+    // background-position: 95% 169px, 83% 75px;
+    // background-repeat: no-repeat;
+    // background-size: 50%, 148%;
+    //! таблетка бекграунд
+
     background-repeat: no-repeat;
     background-position: 100% 169px, 100% 0;
     background-size: auto;
-
+    background-size: 50%, 148%;
+    //!------------------------------------------
     @include retina {
-      background-image: url(../images/hero-bg/t-hero-bg@2x.png),
-        url(../images/hero-bg/t-background-hero@2x.png);
+      background-image: url(../images/hero-bg/img_hero-bg_2t_2x.png),
+        url(../images/hero-bg/img_hero-bg_t_2x.png);
+
+      // //! таблетка бекграунд
       background-size: 50%, 100%;
+      background-position: 100% 169px, 100% 0;
+      // //!------------------------------------------
+
+      // background-size: 50%, 148%;
     }
   }
 
   @include desktop {
-    background-image: url(../images/hero-bg/d-hero-bg.png),
-      url(../images/hero-bg/background-hero.png);
+    background-image: url(../images/hero-bg/img_hero-bg_1d_1x.png),
+      url(../images/hero-bg/img_hero-bg_1x.jpg);
     background-position: 85% 205px, 100% 0;
     background-size: auto;
 
     @include retina {
-      background-image: url(../images/hero-bg/d-hero-bg@2x.png),
-        url(../images/hero-bg/background-hero@2x.png);
+      background-image: url(../images/hero-bg/img_hero-bg_1d_2x.png),
+        url(../images/hero-bg/img_hero-bg_2x.jpg);
       background-size: 611px, 100%;
     }
   }
@@ -66,7 +79,8 @@
 
   @include tablet {
     align-items: flex-start;
-    padding: 290px 40px 208px 40px;
+    padding: 290px 40px 180px 40px;
+    // padding: 290px 40px 208px;
   }
 
   @include desktop {
@@ -115,6 +129,12 @@
   border-radius: 16px;
   color: $green-text-color;
   background-color: $secondary-text-color;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
 
   @include tablet {
     font-size: 32px;
