@@ -1,5 +1,6 @@
 .take-order {
-
+    // padding-top: 40px;
+    // padding-bottom: 50px;
     background-image: url('../images/take-order/background/order_mob.jpg');
     background-size: cover;
     background-position: center;
@@ -32,11 +33,26 @@
     font-size: 32px;
     line-height: 38px;
     color: #FFFFFF;
+    margin-bottom: 16px;
 
     @include tablet {
         font-size: 56px;
         line-height: 66px;
     }
+}
+
+.image-order {
+    margin: 0 auto;
+    border-radius: 16px;
+}
+
+.card-set {
+    // display: flex;
+    gap: 16px;
+}
+
+.img-card-set {
+    border-radius: 4px;
 }
 
 .old-price {
@@ -45,6 +61,7 @@
     line-height: 100%;
     text-decoration-line: line-through;
     color: #8D9289;
+    margin-top: 16px;
 
     @include tablet {
         font-size: 24px;
@@ -56,6 +73,8 @@
     font-size: 32px;
     line-height: 100%;
     color: #86E543;
+    // margin-top: 24px;
+    margin-bottom: 16px;
 
     @include tablet {
         font-size: 48px;
@@ -68,6 +87,7 @@
     line-height: 28px;
     color: #86E543;
     text-transform: uppercase;
+    margin-top: 32px;
 
     @include tablet {
         font-size: 36px;
@@ -76,12 +96,23 @@
 
 }
 
+.wrap-inputs {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .label-f {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
     text-transform: capitalize;
+    margin-bottom: 0;
+
+    &:not(:first-child) {
+        margin-top: 40px;
+    }
 
     @include tablet {
         font-size: 18px;
@@ -94,6 +125,9 @@
     font-size: 16px;
     line-height: 20px;
     color: #CDCDCD;
+    margin: 0;
+    margin-bottom: 4px;
+    padding: 0;
 
     @include tablet {
         font-size: 18px;
@@ -105,6 +139,10 @@
     border: none;
     border-bottom: 1px solid #86E543;
     background-color: transparent;
+    padding: 0;
+    margin: 0;
+    
+
     @include desktop {
         width: 590px;
     }
@@ -132,20 +170,14 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
+       
     
-    
-    
-    cursor: pointer;
 
     @include tablet {
         font-size: 32px;
         line-height: 38px;
         padding: 16px 64px;
     }
-
-    transform: box-shadow 0px 4px 10px rgba(97, 162, 58, 0.2),
-    0px 4px 50px rgba(94, 236, 54, 0.5),
-    0px 4px 4px rgba(17, 168, 26, 0.2);
 
 }
 
@@ -156,6 +188,14 @@
     border-radius: 16px;
     padding: 16px 42px;
     text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 16px;
+
+    &:hover,
+        &:focus {
+            box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+                0px 4px 10px rgba(255, 255, 255, 0.1);
+        }
 }
 
 .btn-dark {
@@ -165,4 +205,11 @@
     border-radius: 16px;
     padding: 16px 42px;
     text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover,
+        &:focus {
+            box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+                0px 4px 10px rgba(255, 255, 255, 0.1);
+        }
 }
