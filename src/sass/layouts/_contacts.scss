@@ -29,7 +29,14 @@
 }
 
 .contacts-part__container {
-    @include desktop {
+    margin-top: 16px;
+
+    @include tablet {
+        margin-top: 32px;            
+    }
+
+    @include desktop {        
+        margin-top: 59px;
         display: flex;
     }
 }
@@ -45,22 +52,18 @@
     }
 }
 
-.contacts-part__text {
-    margin-top: 16px;
+.contacts-part__text {    
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19 / 16);
     color: $main-text-color;    
 
-    @include tablet {
-        margin-top: 32px;
+    @include tablet {        
         font-size: 24px;
-        line-height: calc(28 / 24);
-    }
+        line-height: calc(28 / 24);        
+    }    
 
-    @include desktop {
-        margin-top: 59px;        
-    }
+    
 }
 
 .contacts-part_list {
@@ -73,7 +76,7 @@
     
     @include desktop {
         display: block;
-        margin-top: 59px;
+        margin-top: 40px;
     }
 }
 
@@ -90,12 +93,14 @@
 }
 
 .contacts-part__subtitle {
+    padding-bottom: 8px;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19 / 16);
     color: $main-text-color;
 
     @include tablet {
+        padding-bottom: 0;
         font-size: 24px;
         line-height: calc(28 / 24);
     }
