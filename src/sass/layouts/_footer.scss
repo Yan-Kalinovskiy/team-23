@@ -17,7 +17,8 @@
   }
 }
 
-.footer__container {  
+.footer__container {
+  width: 100%;
   @include tablet {
     display: flex;
     justify-content: space-between;
