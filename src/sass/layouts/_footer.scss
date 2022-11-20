@@ -1,0 +1,126 @@
+.footer {
+  background-color: #001414;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 25px 32px 25px 16px;  
+
+  @include tablet {
+    padding: 40px 50px 40px 40px;
+  }
+
+  @include desktop {
+    padding: 40px 179px 40px 40px;
+  }
+}
+
+.footer__container {  
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__logo-container {
+  max-width: 117px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.footer__logo {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #ffffff;
+
+  // &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+
+.footer-section__card {
+  margin-bottom: 24px;
+}
+
+.footer-link {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.footer-section__link {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #ffffff;
+  display: block;
+
+  // &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+
+.footer-container__socials {
+  position: absolute;
+  top: 106px;
+  right: 32px;
+
+  @include tablet {
+    position: static;
+  }
+}
+
+.footer-section__socials {
+  // width: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @include tablet {
+    flex-direction: row;    
+    gap: 16px;
+  }
+
+  @include desktop {
+    flex-direction: column;
+  }
+}
+
+.footer-contacts__mail {
+  margin-bottom: 16px;
+}
+
+.footer-contacts__title {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.footer-contacts__number {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-contacts__link {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-transform: capitalize;
+  color: #8d9289;
+  // &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
