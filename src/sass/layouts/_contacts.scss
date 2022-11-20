@@ -28,7 +28,14 @@
     }
 }
 
+.contacts-part__container {
+    @include desktop {
+        display: flex;
+    }
+}
+
 .contacts-part__contacts {
+    margin-bottom: 24px;
     @include tablet {
         margin-right: 200px;
     }
@@ -43,8 +50,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19 / 16);
-    color: $main-text-color;
-    
+    color: $main-text-color;    
 
     @include tablet {
         margin-top: 32px;
@@ -61,10 +67,12 @@
     margin-top: 24px;    
     
     @include tablet {
+        display: flex;
         margin-top: 32px;            
     }
     
     @include desktop {
+        display: block;
         margin-top: 59px;
     }
 }
@@ -104,4 +112,58 @@
         font-size: 24px;
         line-height: calc(28 / 24);
     }
+}
+
+.contacts-form {    
+    @include desktop {
+        display: flex;
+    }
+}
+
+.register-form {
+    width: 289px;
+}
+
+.register-form__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    color: $accent-color;
+
+    @include tablet {
+        font-size: 36px;
+        line-height: calc(42 / 36);
+        }
+}
+
+.register-form__group {
+    margin-top: 16px;    
+}
+
+.register-form__input {
+    margin-bottom: 40px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: $main-text-color;
+    background-color: $green-text-color;
+
+    border-bottom: 1px solid #86E543;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.register-form__heading {
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: #CDCDCD;    
+}
+
+.register-form__message {
+    background-color: $green-text-color;    
+    border: 1px solid #86E543;
 }
