@@ -61,9 +61,7 @@
     @include tablet {        
         font-size: 24px;
         line-height: calc(28 / 24);        
-    }    
-
-    
+    }        
 }
 
 .contacts-part_list {
@@ -150,14 +148,21 @@
 
     font-weight: 400;
     font-size: 16px;
-    line-height: calc(20 / 16);
-    color: $main-text-color;
+    line-height: calc(20 / 16);    
     background-color: $green-text-color;
 
     border-bottom: 1px solid #86E543;
     border-top: none;
     border-right: none;
     border-left: none;
+
+    &::-webkit-input-placeholder {
+            color: $main-text-color;
+        }
+
+    &::-moz-placeholder {
+            color: $main-text-color;
+        }
 }
 
 .register-form__heading {
