@@ -1,2 +1,0 @@
-!function(){var e,t;new Swiper(".mySwiper",{pagination:{el:".swiper-pagination",clickable:!0,renderBullet:function(e,t){return'<span class="'+t+'"></span>'}}});e=document.querySelector("[data-menu-btn]"),t=document.querySelector("[data-menu]"),e.addEventListener("click",(function(){var n="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is__open"),e.setAttribute("aria-expanded",!n),t.classList.toggle("is__open")}))}();
-//# sourceMappingURL=index.e8e5fd07.js.map

@@ -1,2 +1,0 @@
-new Swiper(".mySwiper",{pagination:{el:".swiper-pagination",clickable:!0,renderBullet:function(e,t){return'<span class="'+t+'"></span>'}}});(()=>{const e=document.querySelector("[data-menu-btn]"),t=document.querySelector("[data-menu]");e.addEventListener("click",(()=>{const n="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is__open"),e.setAttribute("aria-expanded",!n),t.classList.toggle("is__open")}))})();
-//# sourceMappingURL=index.4b016e0b.js.map
