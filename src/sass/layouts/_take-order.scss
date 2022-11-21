@@ -4,9 +4,14 @@
     background-size: cover;
     background-position: center;
     font-family: $basic-font;
+    padding-top: 40px;
+    padding-bottom: 60px;
+
 
     @include tablet {
         background-image: url('../images/take-order/background/order_tab.jpg');
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     @include desktop {
@@ -20,10 +25,17 @@
     font-size: 24px;
     line-height: 28px;
     color: #FFFFFF;
+    margin-bottom: 35px;
+    
 
     @include tablet {
         font-size: 56px;
         line-height: 66px;
+        margin-bottom: 51px;
+    }
+
+    @include desktop {
+        margin-bottom: 75px;
     }
 }
 
@@ -37,6 +49,19 @@
     @include tablet {
         font-size: 56px;
         line-height: 66px;
+        margin-bottom: 24px;
+    }
+
+    @include desktop {
+        margin-bottom: 32px;
+    }
+}
+
+.goods {
+
+    @include desktop{
+        display: flex;
+        align-items: baseline;
     }
 }
 
@@ -44,26 +69,14 @@
     
     border-radius: 12px;
 
-
-}
-
-.prices {
-    display: inline-block;
-    flex-direction: row;
-}
-
-.card-set {
-     display: flex;
-    gap: 16px;
-
-    @include mobile {
-        display: flex;
-        flex-direction: row;
+    @include desktop {
+        margin-bottom: 24px;
     }
 }
 
-.img-card-set {
-    border-radius: 4px;
+.prices {
+    display: flex;
+    flex-direction: row;
 }
 
 .old-price {
@@ -73,6 +86,7 @@
     text-decoration-line: line-through;
     color: #8D9289;
     margin-top: 16px;
+    margin-bottom: 40px;
 
     @include tablet {
         font-size: 24px;
@@ -92,6 +106,35 @@
         font-size: 48px;
     }
 }
+
+.card-set {
+     display: flex;
+     align-items: baseline;
+     
+     
+    
+}
+
+.card-set-list {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+
+    @include desktop {
+        gap: 24px
+    }
+}
+
+// .item-card-set {
+//     border-radius: 4px;
+// }
+
+.image-order-set {
+    margin-bottom: 0;
+    border-radius: 4px;
+}
+
+
 
 .wrap-form {
     width: 100%;
@@ -133,7 +176,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-     margin-bottom: 40px;
+     
 
      @include tablet {
         margin-bottom: 24px;
@@ -142,6 +185,10 @@
     @include desktop {
         widt: 590px
     }
+}
+
+.wrap-inputs:not(:last-child) {
+    margin-bottom: 40px;
 }
 
 .label-container {
@@ -224,6 +271,7 @@
 // }
 
 .select {
+    display: none;
     border-bottom: 1px solid #86E543;
  }
 
@@ -231,6 +279,7 @@
     color: #FFFFFF;
       font-size: 18px;
       line-height: 20px;
+    border-bottom: 1px solid #86E543;
  }
 
  select-light {
