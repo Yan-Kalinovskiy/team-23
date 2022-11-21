@@ -1,6 +1,5 @@
 .take-order {
-    // padding-top: 40px;
-    // padding-bottom: 50px;
+    
     background-image: url('../images/take-order/background/order_mob.jpg');
     background-size: cover;
     background-position: center;
@@ -44,6 +43,8 @@
 .image-order {
     margin: 0 auto;
     border-radius: 16px;
+
+
 }
 
 .card-set {
@@ -75,6 +76,7 @@
     color: #86E543;
     // margin-top: 24px;
     margin-bottom: 16px;
+    margin-left: auto;
 
     @include tablet {
         font-size: 48px;
@@ -120,7 +122,45 @@
     }
 }
 
+// .select__menu {
+//     display: flex;
+//     background-color: transparent;
+//     width: 100%;
+// }
+
+// .select__current {
+    
+//     background-color: rgba(23, 87, 61, 1);
+// }
+
+// .select__icon {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     text-align: center;
+//     flex-shrink: 0;
+//     color: #FFFFFF;
+//     width: 18px;
+//     height: 13px;
+//     margin-left: auto;
+    
+// }
+
+.select__box {
+    width: 100%;
+    border-bottom: 1px solid #86E543;
+}
+
+.select__item {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 20px;
+    
+}
+
+
 .label-t {
+    
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -135,6 +175,7 @@
 }
 
 .input-field {
+    position: relative;
     width: 100%;
     border: none;
     border-bottom: 1px solid #86E543;
@@ -146,6 +187,12 @@
     @include desktop {
         width: 590px;
     }
+}
+
+.icon-field {
+    position: absolute;
+    right: 4%;
+    cursor: pointer;
 }
 
 .message {
@@ -170,6 +217,10 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
        
     
 
