@@ -1,190 +1,179 @@
 .take-order {
-    
-    background-image: url('../images/take-order/background/order_mob.jpg');
-    background-size: cover;
-    background-position: center;
-    font-family: $basic-font;
+  background-image: url('../images/take-order/background/order_mob.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: $basic-font;
 
-    @include tablet {
-        background-image: url('../images/take-order/background/order_tab.jpg');
-    }
+  @include tablet {
+    background-image: url('../images/take-order/background/order_tab.jpg');
+  }
 
-    @include desktop {
-        background-image: url('../images/take-order/background/order_desk.jpg');
-    }
-
+  @include desktop {
+    background-image: url('../images/take-order/background/order_desk.jpg');
+  }
 }
 
 .order {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FFFFFF;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
 
-    @include tablet {
-        font-size: 56px;
-        line-height: 66px;
-    }
+  @include tablet {
+    font-size: 56px;
+    line-height: 66px;
+  }
 }
 
 .wrap__title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
-    color: #FFFFFF;
-    margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  margin-bottom: 16px;
 
-    @include tablet {
-        font-size: 56px;
-        line-height: 66px;
-    }
+  @include tablet {
+    font-size: 56px;
+    line-height: 66px;
+  }
 }
 
 .image-order {
-    
-    border-radius: 12px;
-
-
+  border-radius: 12px;
 }
 
 .prices {
-    display: inline-block;
-    flex-direction: row;
+  display: inline-block;
+  flex-direction: row;
 }
 
 .card-set {
-     display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 
-    @include mobile {
-        display: flex;
-        flex-direction: row;
-    }
+  @include mobile {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .img-card-set {
-    border-radius: 4px;
+  border-radius: 4px;
 }
 
 .old-price {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
-    text-decoration-line: line-through;
-    color: #8D9289;
-    margin-top: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration-line: line-through;
+  color: #8d9289;
+  margin-top: 16px;
 
-    @include tablet {
-        font-size: 24px;
-    }
+  @include tablet {
+    font-size: 24px;
+  }
 }
 
 .new-price {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 100%;
-    color: #86E543;
-    // margin-top: 24px;
-    margin-bottom: 16px;
-    margin-left: auto;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  color: #86e543;
+  // margin-top: 24px;
+  margin-bottom: 16px;
+  margin-left: auto;
 
-    @include tablet {
-        font-size: 48px;
-    }
+  @include tablet {
+    font-size: 48px;
+  }
 }
 
 .wrap-form {
-    width: 100%;
+  width: 100%;
 
-    @include tablet {
-        width: 589px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  @include tablet {
+    width: 589px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .form-title {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    color: #86E543;
-    text-transform: uppercase;
-    margin-top: 32px;
-    margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #86e543;
+  text-transform: uppercase;
+  margin-top: 32px;
+  margin-bottom: 16px;
 
-    @include tablet {
-        font-size: 36px;
-        line-height: 42px;
-    }
-
+  @include tablet {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .form-box {
-
-    @include desktop {
-      display: flex;
-      flex-direction: row;
-    }
-    
-
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .wrap-inputs {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-     margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 40px;
 
-     @include tablet {
-        margin-bottom: 24px;
-     }
+  @include tablet {
+    margin-bottom: 24px;
+  }
 
-    @include desktop {
-        widt: 590px
-    }
+  @include desktop {
+    widt: 590px;
+  }
 }
 
 .label-container {
-    position: relative;
-     margin-bottom: 40px;
+  position: relative;
+  margin-bottom: 40px;
 }
 
 .label-form {
-    font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        color: #FFFFFF;
-        text-transform: capitalize;
-        margin-bottom: 0;
-        position: absolute;
-        bottom: 4;
-    
-        &:not(:first-child) {
-            margin-top: 40px;
-        }
-    
-        @include tablet {
-            font-size: 18px;
-    
-        }
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 4;
+
+  &:not(:first-child) {
+    margin-top: 40px;
+  }
+
+  @include tablet {
+    font-size: 18px;
+  }
 }
 
 .label-f {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FFFFFF;
-    text-transform: capitalize;
-    margin-bottom: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 0;
 
-    &:not(:first-child) {
-        margin-top: 40px;
-    }
+  &:not(:first-child) {
+    margin-top: 40px;
+  }
 
-    @include tablet {
-        font-size: 18px;
-
-    }
+  @include tablet {
+    font-size: 18px;
+  }
 }
 
 // .select__menu {
@@ -194,7 +183,7 @@
 // }
 
 // .select__current {
-    
+
 //     background-color: rgba(23, 87, 61, 1);
 // }
 
@@ -208,7 +197,7 @@
 //     width: 18px;
 //     height: 13px;
 //     margin-left: auto;
-    
+
 // }
 
 // .select__box {
@@ -220,61 +209,59 @@
 //     color: #FFFFFF;
 //     font-size: 18px;
 //     line-height: 20px;
-    
+
 // }
 
 .select {
-    border-bottom: 1px solid #86E543;
- }
+  border-bottom: 1px solid #86e543;
+}
 
- .select-box {
-    color: #FFFFFF;
-      font-size: 18px;
-      line-height: 20px;
- }
+.select-box {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 20px;
+}
 
- select-light {
-    background-color:rgba(23, 87, 61, 1);
- }
+select-light {
+  background-color: rgba(23, 87, 61, 1);
+}
 
 .label-t {
-    
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #CDCDCD;
-    margin: 0;
-    margin-bottom: 4px;
-    padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #cdcdcd;
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
 
-    @include tablet {
-        font-size: 18px;
-    }
+  @include tablet {
+    font-size: 18px;
+  }
 }
 
 .input-field {
-    position: relative;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #86E543;
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    
+  position: relative;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #86e543;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 
-    @include desktop {
-        width: 590px;
-    }
+  @include desktop {
+    width: 590px;
+  }
 }
 
 .input-field-f {
-    position: relative;
-        width: 100%;
-        border: none;
-        border-bottom: 1px solid #86E543;
-        background-color: transparent;
-        padding: 0;
-        margin: 0;
+  position: relative;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #86e543;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 // .input-field-f::after{
@@ -290,93 +277,88 @@
 // }
 
 .icon-field {
-    position: absolute;
-    right: 4%;
-    cursor: pointer;
+  position: absolute;
+  right: 4%;
+  cursor: pointer;
 }
 
 .message {
-    height: 95px;
-    width: 100%;
-    border: 1px solid #86E543;
-    background-color: transparent;
-    resize: none;
+  height: 95px;
+  width: 100%;
+  border: 1px solid #86e543;
+  background-color: transparent;
+  resize: none;
 
-    @include tablet {
-        height: 256px;
-    }
+  @include tablet {
+    height: 256px;
+  }
 
-    @include desktop {
-        width: 589px;
-        height: 256px;
-    }
-
+  @include desktop {
+    width: 589px;
+    height: 256px;
+  }
 }
 
 .subwrap-btn {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  padding: 0;
+
+  @include tablet {
+    font-size: 32px;
+    line-height: 38px;
+    // padding: 16px 64px;
+  }
+
+  @include desktop {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0;
-    padding: 0;
-    
-       
-    
-
-    @include tablet {
-        font-size: 32px;
-        line-height: 38px;
-        // padding: 16px 64px;
-    }
-
-    @include desktop {
-        display: flex;
-        flex-direction: row;
-    }
-
+    flex-direction: row;
+  }
 }
 
 .btn-light {
-    color: #01383A;
-    background-color: #86E543;
-    border: 1px solid #86E543;
-    border-radius: 16px;
-    padding: 16px 42px;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-bottom: 16px;
+  color: #01383a;
+  background-color: #86e543;
+  border: 1px solid #86e543;
+  border-radius: 16px;
+  padding: 16px 42px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 16px;
 
-    @include tablet {
-        width: 306px;
-    }
+  @include tablet {
+    width: 306px;
+  }
 
-    &:hover,
-        &:focus {
-            box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-                0px 4px 10px rgba(255, 255, 255, 0.1);
-        }
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
 }
 
 .btn-dark {
-    color: #86E543;
-    background-color: transparent;
-    border: 1px solid #86E543;
-    border-radius: 16px;
-    padding: 16px 42px;
-    text-transform: uppercase;
-    cursor: pointer;
+  color: #86e543;
+  background-color: transparent;
+  border: 1px solid #86e543;
+  border-radius: 16px;
+  padding: 16px 42px;
+  text-transform: uppercase;
+  cursor: pointer;
 
-    @include tablet {
-            width: 306px;
-        }
+  @include tablet {
+    width: 306px;
+  }
 
-    &:hover,
-        &:focus {
-            box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-                0px 4px 10px rgba(255, 255, 255, 0.1);
-        }
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
 }
