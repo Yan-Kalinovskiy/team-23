@@ -211,18 +211,31 @@
     
 // }
 
-.select__box {
-    width: 100%;
-    border-bottom: 1px solid #86E543;
-}
+// .select__box {
+//     width: 100%;
+//     border-bottom: 1px solid #86E543;
+// }
 
-.select__item {
-    color: #FFFFFF;
-    font-size: 18px;
-    line-height: 20px;
+// .select__item {
+//     color: #FFFFFF;
+//     font-size: 18px;
+//     line-height: 20px;
     
-}
+// }
 
+.select {
+    border-bottom: 1px solid #86E543;
+ }
+
+ .select-box {
+    color: #FFFFFF;
+      font-size: 18px;
+      line-height: 20px;
+ }
+
+ select-light {
+    background-color:rgba(23, 87, 61, 1);
+ }
 
 .label-t {
     
