@@ -37,17 +37,15 @@
                     <strong class="register-form__title">CONTACT US</strong>
                     <div class="register-form__group" role="group">
                         <ul>
-                            <li>
-                                <label class="register-form__field">
-                                    <input class="register-form__input" type="text" name="user-name" placeholder="Name" required>
-                                </label>
+                            <li class="register-form__container">
+                                <label class="register-form__label" for="user-name">Name</label>
+                                <input class="register-form__input" type="text" name="user-name" id="user-name" required />
                             </li>
-                            <li>
-                                <label class="register-form__field">
-                                    <input class="register-form__input" type="email" name="user-email" placeholder="Email" required>
-                                </label>
+                            <li class="register-form__container">
+                                <label class="register-form__label" for="user-email">Email</label>
+                                <input class="register-form__input" type="text" name="user-email" id="user-email" required />
                             </li>
-                            <li>
+                            <li class="register-form__wrap">
                                 <label class="register-form__field">
                                     <span class="register-form__heading">Leave your message</span>
                                     <textarea class="register-form__message" name="comment" rows="5"></textarea>
@@ -56,13 +54,19 @@
                         </ul>
             
                     </div>
-                    <button class="register-form__btn" type="submit">SEND</button>
+                    <div class="register-form__btn">
+                        <button class="form__btn" type="submit">SEND</button>
+                    </div>
+                    
                 </form>
             </div>
-            </div>
-            
         </div>
-    </section>
+
+
+
+            
+    </div>
+</section>
 
 
 

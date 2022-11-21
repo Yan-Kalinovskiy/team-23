@@ -24,6 +24,7 @@
 
 .contacts-part__image {
     width: 100%;
+    
     @include tablet {
         border-radius: 12px;
     }          
@@ -83,11 +84,12 @@
 
     @include tablet {        
         font-size: 24px;
-        line-height: calc(28 / 24);                
+        line-height: calc(28 / 24); 
+        width: 488px;
     }     
     
     @media screen and (min-width: 1280px) {
-        width: 488px;
+        
     }
 }
 
@@ -106,7 +108,8 @@
 }
 
 .contacts-part__item {
-    // margin-right: 141px;
+    margin-left: 0;
+    padding: 0;
 
     @include tablet {
         margin-right: 32px;
@@ -190,6 +193,24 @@
     width: 100%;
 }
 
+.register-form__container {
+    position: relative;
+    margin-left: 0;
+    padding: 0;
+}
+
+.register-form__label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: #FFFFFF;
+    position: absolute;
+}
+
+.register-form__container>.register-form__input {
+    padding-left: 50px;
+}
+
 .register-form__input {
     width: 100%;
     margin-bottom: 40px;
@@ -204,17 +225,14 @@
     border-right: none;
     border-left: none;
 
-    &::-webkit-input-placeholder {
-            color: $main-text-color;
-        }
-
-    &::-moz-placeholder {
-            color: $main-text-color;
-        }
-
     @media screen and (min-widh: 1280px) {
         width: 591px;
     }
+}
+
+.register-form__wrap {    
+    margin-left: 0;
+    padding: 0;
 }
 
 .register-form__heading {    
@@ -232,8 +250,14 @@
 }
 
 .register-form__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.form__btn {
     width: 173px;
     margin-top: 24px;
+    
     padding: 16px 20px;
     background-color: $green-text-color;
     border: 1px solid #FFFFFF;
