@@ -1,0 +1,165 @@
+.swiper-wrap {
+  max-width: 480px;
+  margin: -2px auto 0;
+  padding-bottom: 48px;
+
+  background-color: #01383a;
+
+  @include tablet {
+    max-width: 768px;
+    padding: 120px 0;
+  }
+
+  @include desktop {
+    max-width: 1280px;
+
+    background-image: url(../images/gallery/img_gallery-bg_1d_1x.jpg);
+
+    @include retina {
+      background-image: url(../images/gallery/img_gallery-bg_1d_2x.jpg);
+      background-size: 100%;
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
+
+  @include desktop {
+    margin-bottom: 24px;
+  }
+}
+
+.swiper-slide {
+  position: relative;
+
+  border-width: 2px 0px;
+}
+
+.swiper-pagination {
+  position: static;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  width: 40px;
+  height: 16px;
+  border-radius: 40px;
+  background-color: #ffffff;
+}
+
+/* ------------TITLE SLIDE---------- */
+.banner-title {
+  position: absolute;
+
+  font-size: 24px;
+  line-height: calc(28px / 24px);
+
+  @include tablet {
+    font-size: 56px;
+    line-height: calc(66px / 56px);
+  }
+
+  &--one {
+    left: 24px;
+    bottom: 37px;
+
+    @include tablet {
+      left: 41px;
+      bottom: 14px;
+    }
+
+    @include desktop {
+      left: 345px;
+      bottom: 40px;
+    }
+
+    background: linear-gradient(
+      270deg,
+      #1edde0 13.26%,
+      #8bda41 51.01%,
+      #ef001b 107.89%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &--two {
+    left: 50px;
+    bottom: 40px;
+
+    @include tablet {
+      bottom: 20px;
+    }
+
+    @include desktop {
+      bottom: 40px;
+    }
+
+    background: linear-gradient(
+      270deg,
+      #03fe8f 4.61%,
+      #ebdcff 57.91%,
+      #ff98f3 92.2%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &--three {
+    left: 50%;
+    bottom: 40px;
+
+    @include tablet {
+      left: 56px;
+      bottom: 20px;
+    }
+
+    @include desktop {
+      bottom: 55px;
+    }
+    background: linear-gradient(
+      270deg,
+      #ffffff 13.26%,
+      #693cf9 60.87%,
+      #f475eb 107.89%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.title__br--none {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.gallery__image {
+  margin: 0 auto;
+  border-width: 2px 0px;
+  border-style: solid;
+  border-color: #86e543;
+}
