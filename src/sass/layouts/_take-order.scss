@@ -41,15 +41,25 @@
 }
 
 .image-order {
-    margin: 0 auto;
-    border-radius: 16px;
+    
+    border-radius: 12px;
 
 
 }
 
+.prices {
+    display: inline-block;
+    flex-direction: row;
+}
+
 .card-set {
-    // display: flex;
+     display: flex;
     gap: 16px;
+
+    @include mobile {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .img-card-set {
@@ -83,6 +93,16 @@
     }
 }
 
+.wrap-form {
+    width: 100%;
+
+    @include tablet {
+        width: 589px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .form-title {
     font-weight: 500;
     font-size: 24px;
@@ -90,6 +110,7 @@
     color: #86E543;
     text-transform: uppercase;
     margin-top: 32px;
+    margin-bottom: 16px;
 
     @include tablet {
         font-size: 36px;
@@ -98,10 +119,54 @@
 
 }
 
+.form-box {
+
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+    }
+    
+
+}
+
 .wrap-inputs {
     display: flex;
     flex-direction: column;
+    width: 100%;
+     margin-bottom: 40px;
+
+     @include tablet {
+        margin-bottom: 24px;
+     }
+
+    @include desktop {
+        widt: 590px
+    }
+}
+
+.label-container {
+    position: relative;
+     margin-bottom: 40px;
+}
+
+.label-form {
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-transform: capitalize;
+        margin-bottom: 0;
+        position: absolute;
+        bottom: 4;
     
+        &:not(:first-child) {
+            margin-top: 40px;
+        }
+    
+        @include tablet {
+            font-size: 18px;
+    
+        }
 }
 
 .label-f {
@@ -189,6 +254,28 @@
     }
 }
 
+.input-field-f {
+    position: relative;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #86E543;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+}
+
+// .input-field-f::after{
+//     content: "";
+//     width: 18px;
+//     height: 13px;
+//     border: none;
+//     background-image: url('../images/icon-order/down.svg');
+// }
+
+// .input-field + icon-form {
+//     background-image: url('../images/icon-order/down.svg');
+// }
+
 .icon-field {
     position: absolute;
     right: 4%;
@@ -217,9 +304,12 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 0;
+    padding: 0;
     
        
     
@@ -227,7 +317,12 @@
     @include tablet {
         font-size: 32px;
         line-height: 38px;
-        padding: 16px 64px;
+        // padding: 16px 64px;
+    }
+
+    @include desktop {
+        display: flex;
+        flex-direction: row;
     }
 
 }
@@ -241,6 +336,10 @@
     text-transform: uppercase;
     cursor: pointer;
     margin-bottom: 16px;
+
+    @include tablet {
+        width: 306px;
+    }
 
     &:hover,
         &:focus {
@@ -257,6 +356,10 @@
     padding: 16px 42px;
     text-transform: uppercase;
     cursor: pointer;
+
+    @include tablet {
+            width: 306px;
+        }
 
     &:hover,
         &:focus {
