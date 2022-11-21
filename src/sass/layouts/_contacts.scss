@@ -22,6 +22,33 @@
     }
 }
 
+.contacts-part__container {
+    
+    @include tablet {
+        
+        background-image: url(../images/contacts-part/img_contacts_bg_2_1x.png);
+
+        @include retina {
+            background-image: url(../images/contacts-part/img_contacts_bg_2_2x.png);
+        }
+    }
+
+    @include desktop {
+        background-image: url(../images/contacts-part/img_contacts_bg_3_1x.png);
+    
+        @include retina {
+            background-image: url(../images/contacts-part/img_contacts_bg_3_2x.png);
+        }
+    }
+}
+
+.contacts-part__picture {
+    @media screen and (max-width: 767px) {
+        margin-left: -16px;
+        margin-right: -16px;
+    }    
+}
+
 .contacts-part__image {
     width: 100%;
     
@@ -49,7 +76,7 @@
     }
 }
 
-.contacts-part__container {
+.contacts-part__wrap {
     margin-top: 16px;
 
     @include tablet {
@@ -59,7 +86,8 @@
     @include desktop {        
         margin-top: 59px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        
     }
 }
 
@@ -76,7 +104,7 @@
     }
 }
 
-.contacts-part__text {    
+.contacts-part__text {   
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19 / 16);
@@ -86,11 +114,7 @@
         font-size: 24px;
         line-height: calc(28 / 24); 
         width: 488px;
-    }     
-    
-    @media screen and (min-width: 1280px) {
-        
-    }
+    }   
 }
 
 .contacts-part_list {
@@ -162,7 +186,7 @@
 
 .contacts-form {    
     @include desktop {
-        display: flex;
+        display: flex;        
     }
 }
 
@@ -172,7 +196,8 @@
     }
 
     @include desktop {
-        margin: 0;
+        width: 591px;
+        margin-left: 122px;
     }
 }
 
@@ -205,6 +230,10 @@
     line-height: calc(20 / 16);
     color: #FFFFFF;
     position: absolute;
+
+    @include tablet {
+        font-size: 18px;            
+    }
 }
 
 .register-form__container>.register-form__input {
@@ -223,11 +252,7 @@
     border-bottom: 1px solid #86E543;
     border-top: none;
     border-right: none;
-    border-left: none;
-
-    @media screen and (min-widh: 1280px) {
-        width: 591px;
-    }
+    border-left: none;   
 }
 
 .register-form__wrap {    
@@ -240,6 +265,10 @@
     font-size: 16px;
     line-height: calc(20 / 16);
     color: #CDCDCD;    
+
+    @include tablet {
+        font-size: 18px;
+    }
 }
 
 .register-form__message {
@@ -252,6 +281,10 @@
 .register-form__btn {
     display: flex;
     justify-content: center;
+
+    @include desktop {
+        justify-content: start;
+    }
 }
 
 .form__btn {
