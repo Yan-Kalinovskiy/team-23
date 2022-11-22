@@ -251,3 +251,25 @@
 
     color: $secondary-text-color;
 }
+
+.cards__icons {
+    margin: 24px 0 0 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cards__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.cards__icon+.cards__icon {
+    margin: 0 0 0 16px;
+}
+
+.cards__icon--rectangular {
+    width: 40px;
+    height: 16px;
+    fill: red;
+}
