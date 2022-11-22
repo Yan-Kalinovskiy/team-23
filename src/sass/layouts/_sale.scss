@@ -1,0 +1,22 @@
+.sale {
+    background-color: #01383A;
+    
+}
+
+.conteiner {
+    @mixin mobile {
+        @media screen and (min-width: 480px) {
+          @content;
+        }
+      }
+}
+
+.sale-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-left: 80px;
+}
