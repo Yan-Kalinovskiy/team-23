@@ -1,0 +1,59 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+body {
+  // color: $main-text-color;
+  font-family: $basic-font;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include mobile {
+    width: 480px;
+  }
+
+  @include tablet {
+    width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include desktop {
+    width: 1280px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

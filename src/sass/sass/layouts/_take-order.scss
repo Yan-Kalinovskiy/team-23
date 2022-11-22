@@ -4,13 +4,9 @@
     background-size: cover;
     background-position: center;
     font-family: $basic-font;
-    padding-top: 40px;
-      padding-bottom: 60px;
 
     @include tablet {
         background-image: url('../images/take-order/background/order_tab.jpg');
-        padding-top: 120px;
-          padding-bottom: 120px;
     }
 
     @include desktop {
@@ -24,12 +20,10 @@
     font-size: 24px;
     line-height: 28px;
     color: #FFFFFF;
-    margin-bottom: 35px;
 
     @include tablet {
         font-size: 56px;
         line-height: 66px;
-        
     }
 }
 
@@ -47,7 +41,7 @@
 }
 
 .image-order {
-    margin: 0;
+    margin: 0 auto;
     border-radius: 16px;
 
 
@@ -58,12 +52,8 @@
     gap: 16px;
 }
 
-.item-card-set {
+.img-card-set {
     border-radius: 4px;
-}
-
-.image-order-set {
-  border-radius: 4px;
 }
 
 .old-price {
