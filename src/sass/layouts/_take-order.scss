@@ -94,6 +94,10 @@
   align-items: baseline;
   gap: 16px;
   margin: 0;
+
+  @include tablet {
+    gap: 24px;
+  }
 }
 
 .item-card-set {
@@ -276,7 +280,7 @@
     @include tablet {
         font-size: 32px;
         line-height: 38px;
-        padding: 16px 64px;
+        
         
         
     }
@@ -319,7 +323,10 @@
     padding: 16px 42px;
     text-transform: uppercase;
     cursor: pointer;
-
+ 
+    @include tablet {
+        padding: 16px 64px;
+      }
 
 
     &:hover,
