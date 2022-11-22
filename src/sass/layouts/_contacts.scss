@@ -1,30 +1,11 @@
-.contacts-part {
-    margin: 0 auto;
+.contacts-part__container {
     padding-top: 40px;
     padding-bottom: 48px;
     background: $green-text-color;
-
+    
     @include tablet {
         padding-top: 120px;
         padding-bottom: 120px;
-    }
-
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
-        
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        width: 100%;
-    }
-}
-
-.contacts-part__container {
-    
-    @include tablet {
         
         background-image: url(../images/contacts-part/img_contacts_bg_2_1x.png);
 
