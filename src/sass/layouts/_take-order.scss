@@ -1,20 +1,32 @@
 .take-order {
     
-    background-image: url('../images/take-order/background/order_mob.jpg');
+    background-image: url('../images/take-order/background/mob_1x.png');
     background-size: cover;
     background-position: center;
     font-family: $basic-font;
     padding-top: 40px;
       padding-bottom: 60px;
 
+      @include retina {
+      background-image: url('../images/take-order/background/mob_2x.png');
+      }
+
     @include tablet {
-        background-image: url('../images/take-order/background/order_tab.jpg');
+        background-image: url('../images/take-order/background/tab_1x.png');
         padding-top: 120px;
           padding-bottom: 120px;
+
+          @include retina {
+            background-image: url('../images/take-order/background/tab_2x.png');
+          }
     }
 
     @include desktop {
-        background-image: url('../images/take-order/background/order_desk.jpg');
+        background-image: url('../images/take-order/background/desk_1x.png');
+
+        @include retina {
+          background-image: url('../images/take-order/background/desk_2x.png');
+        }
     }
 
 }
@@ -46,15 +58,35 @@
     }
 }
 
+.img-price {
+
+  @include tablet {
+    display: flex;
+    
+      align-items: baseline;
+      
+  }
+  
+}
+
 .image-order {
     margin: 0;
     border-radius: 12px;
 
+
 }
 
 .prices {
-  display: inline-block;
+  display: flex;
   flex-direction: row;
+
+  @include tablet {
+    display: block;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-top: -50px;
+    
+  }
 }
 
 .old-price {
@@ -67,6 +99,7 @@
 
   @include tablet {
     font-size: 24px;
+    margin-bottom: 56px;
   }
 }
 
@@ -75,12 +108,13 @@
   font-size: 32px;
   line-height: 100%;
   color: #86E543;
-  // margin-top: 24px;
+   margin-top: 24px;
   margin-bottom: 16px;
   margin-left: auto;
 
   @include tablet {
     font-size: 48px;
+    
   }
 }
 
@@ -200,17 +234,17 @@
     
 // }
 
-.select__box {
-    width: 100%;
-    border-bottom: 1px solid #86E543;
-}
+// .select__box {
+//     width: 100%;
+//     border-bottom: 1px solid #86E543;
+// }
 
-.select__item {
-    color: #FFFFFF;
-    font-size: 18px;
-    line-height: 20px;
+// .select__item {
+//     color: #FFFFFF;
+//     font-size: 18px;
+//     line-height: 20px;
     
-}
+// }
 
 
 .label-t {
@@ -236,6 +270,7 @@
     background-color: transparent;
     padding: 0;
     margin: 0;
+    height: 1px;
     
 
     @include desktop {
@@ -255,6 +290,7 @@
     border: 1px solid #86E543;
     background-color: transparent;
     resize: none;
+    margin: 0;
 
     @include tablet {
         height: 256px;

@@ -6,6 +6,7 @@
       <div class="subwrap">
         <div class="goods">
         <div class="cover-image">
+          <div class="img-price">
         <picture>
           <source
             media="(min-width: 1280px)"
@@ -36,8 +37,9 @@
         </picture>
 
           <div class="prices">
-          <p class="price old-price">65.14 USD</p>
-          <p class="price new-price">55.14 USD</p>
+          <div class="price old-price">65.14 USD</div>
+          <div class="price new-price">55.14 USD</div>
+        </div>
         </div>
 
         <div class="card-set">
@@ -171,84 +173,43 @@
         
 
         <div class="wrap wrap-form">
-          <form class="form form-order">
-            <h3 class="title form-title">CONTACT US</h3>
-            <div class="form-box">
-              <div class="wrap wrap-inputs">
-                <ul>
-                  <li class="label-container">
-                    <label class="label label-form" for="username">Name</label>
-                    <input
-                      class="input input-field"
-                      type="text"
-                      name="username"
-                      id="username"
-                    />
-                  </li>
-
-                  <li class="label-container">
-                    <label class="label label-form" for="username">Email</label>
-                    <input
-                      class="input input-field"
-                      type="text"
-                      name="email"
-                      id="username"
-                    />
-                  </li>
-
-                  <li class="label-container">
-                    <label class="label label-f"
-                      >Color Option
-                      <input class="input input-field-f" name="option" />
-                      <!-- <svg class="icon icon-field">
-                        <use
-                          href="/src/images/take-order/sprite/icons.svg#icon-down"
-                        ></use>
-                      </svg> -->
-                    </label>
-
-                    <div class="select">
-                      <ul class="select-box">
-                        <li class="select-item">K9D Black Orange</li>
-                        <li class="select-item">
-                          <span class="select-light">Silver Gray</span>
-                        </li>
-                        <li class="select-item">K9U White Blue</li>
-                      </ul>
-                    </div>
-
-                    <label class="label label-f"
-                      >Quantity
-                      <input class="input input-field-f" name="quantity" />
-                    </label>
-
-
-                      <div class="select-box">
-                        <div class="select-item">K9D Black Orange</div>
-                        <div class="select-item">K9D Silver Gray</div>
-                        <div class="select-item">K9U White Blue</div>
-                      </div>
-                    </div>
-                    <label class="label label-f"
-                      >Quantity
-                      <input class="input input-field" name="quantity" />
-                      
-                    <label class="label label-f"
-                      >Payment
-                      <input class="input input-field-f" name="payment" />
-                     
-                    </label>
-                  </li>
-                </ul>
-
-                <div class="textarea">
-                  <label class="label label-t"
-                    >Leave your message
-                    <textarea class="message" type="text"> </textarea>
-                  </label>
-                </div>
-              </div>
-            </div>
+        <form class="form form-order">
+          <h3 class="title form-title">CONTACT US</h3>
+          <div class="wrap wrap-inputs">
+            <label class="label label-f"
+              >Name
+              <input class="input input-field" name="username" />
+            </label>
+            <label class="label label-f"
+              >Email
+              <input class="input input-field" name="email" />
+            </label>
+            <label class="label label-f"
+              >Color Option
+              <input class="input input-field" name="option" />
+              <!-- <svg class="icon icon-field" width="18" height="13">
+                <use href="./images/take-order/sprite/icons.svg#icon-down/"></use>
+              </svg> -->
+            </label>
+            <label class="label label-f"
+              >Quantity
+              <input class="input input-field" name="quantity" />
+              <!-- <svg class="icon icon-field" width="18" height="13">
+                <use href="./images/take-order/sprite/icons.svg#icon-down/"></use>
+              </svg> -->
+            </label>
+            <label class="label label-f"
+              >Payment
+              <input class="input input-field" name="payment" />
+              <!-- <svg class="icon icon-field" width="18" height="13">
+                <use href="./image/take-order/sprite/icons.svg#icon-down/"></use>
+              </svg> -->
+            </label>
+            <label class="label label-t"
+              >Leave your message
+              <textarea class="message" type="text"> </textarea>
+            </label>
+          </div>
             <div class="subwrap subwrap-btn">
               <button type="button" class="btn btn-light">buy it now</button>
               <button type="button" class="btn btn-dark">ADD TO CART</button>
