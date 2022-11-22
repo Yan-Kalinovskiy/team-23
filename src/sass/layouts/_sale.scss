@@ -1,22 +1,122 @@
 .sale {
+    width: 100%;
     background-color: #01383A;
-    
-}
-
-.conteiner {
     @mixin mobile {
         @media screen and (min-width: 480px) {
           @content;
         }
       }
+      
+}
+
+.conteiner {
+    
 }
 
 .sale-title {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 28px;
     color: #FFFFFF;
     margin-left: 80px;
+}
+
+.sale-list {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 35px;
+    margin-left: 17px;
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    // @media screen and (min-width: 1200px) {
+    //     flex-wrap: wrap;
+    //     flex-direction: row;
+    // }
+}
+
+.media-pad {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.sale-info {
+    max-width: 285px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    
+}
+
+.sale-text-name {
+width: 261px;
+height: 52px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 26px;
+color: #86E543;
+margin-bottom: 8px;
+}
+
+.price {
+    max-width: 261px;
+    display: flex;
+    gap: 80px;
+}
+
+.sale-text-sale {
+width: 67px;
+height: 14px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 100%;
+text-decoration-line: line-through;
+color: #8D9289;
+}
+
+.sale-text-price {
+    width: 95px;
+    height: 20px;    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px; 
+    color: #86E543;
+}
+
+.bnt {
+    border: 0;
+    display: inline-flex;
+}
+
+.sale-bnt {
+    width: 153px;
+    height: 51px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 83px;
+    margin-top: 24px;
+    margin-bottom: 48px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #01383A;
 }
