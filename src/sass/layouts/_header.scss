@@ -75,7 +75,8 @@
 
 .header__list {
    display: none;
-
+   padding: 5px;
+   margin-left: 10px;
    @include desktop {
       z-index: 2;
       display: flex;
@@ -116,12 +117,6 @@
       transition: 0.3s;
    }
 }
-
-ul li {
-   padding: 5px;
-   margin-left: 10px;
-}
-
 
 //mob-menu ---------------------------------- //
 
