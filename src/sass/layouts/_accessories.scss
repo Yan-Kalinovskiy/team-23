@@ -142,6 +142,22 @@
     }
 }
 
+.cards__item--tablet {
+    display: none;
+
+    @include tablet {
+        display: block;
+    }
+}
+
+.cards__item--desktop {
+    display: none;
+
+    @include desktop {
+        display: block;
+    }
+}
+
 .cards__thumb {
     position: relative;
     overflow: hidden;
