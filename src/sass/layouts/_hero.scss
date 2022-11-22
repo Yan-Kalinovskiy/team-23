@@ -40,16 +40,16 @@
     background-repeat: no-repeat;
     background-position: 100% 169px, 100% 0;
     background-size: auto;
-    background-size: 50%, 148%;
+    background-size: 50%, 100%;
     //!------------------------------------------
     @include retina {
       background-image: url(../images/hero-bg/img_hero-bg_2t_2x.png),
         url(../images/hero-bg/img_hero-bg_t_2x.png);
 
-      // //! таблетка бекграунд
-      background-size: 50%, 100%;
-      background-position: 100% 169px, 100% 0;
-      // //!------------------------------------------
+      // // //! таблетка бекграунд
+      // background-size: 50%, 100%;
+      // background-position: 100% 169px, 100% 0;
+      // // //!------------------------------------------
 
       // background-size: 50%, 148%;
     }
