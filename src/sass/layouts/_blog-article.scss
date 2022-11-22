@@ -2,6 +2,10 @@
     font-family: $basic-font;
     font-style: normal;
     background-image: url(../images/background/article_background.jpg);
+
+@include tablet {
+    padding: 120px 40px;
+}
 }
 
 .container-article__header {
@@ -12,6 +16,14 @@
         padding: 40px 16px 31px;
 
         color: $main-text-color;
+
+@include tablet {
+    font-weight: 500;
+        font-size: 56px;
+        line-height: 1;
+        padding: 0px;
+        margin-top: 0px;
+}
 }
 
 .container-article__image-box {}
@@ -19,9 +31,19 @@
 .container-article__image {
     width: 387px;
     height: 336px;
+
+@include tablet {
+    width: 387px;
+        height: 228px;
+        border-radius: 12px;
+}
 }
 
-.container-article__second-header-container {}
+.container-article__second-header-container {
+    @include desktop {
+        display: flex;
+    }
+}
 
 .container-article__second-header {
         font-weight: 600;
@@ -31,6 +53,15 @@
         padding: 16px 8px;
 
         color: $main-text-color;
+
+@include tablet {
+    font-weight: 600;
+        font-size: 24px;
+        line-height: 1;
+        padding: 0px;
+
+        color: $accent-color;
+}
 }
 
 .container-article__date {
@@ -41,6 +72,15 @@
         padding: 8px 16px;
 
         color: $grey-text-color;
+
+@include tablet {
+    font-weight: 600;
+        font-size: 24px;
+        line-height: 1;
+        padding: 0px;
+
+        color: $grey-text-color;
+}
 }
 
 .container-article__general {
@@ -51,124 +91,148 @@
 
 .container-article__thumb {
     padding: 16px 8px;
+
+@include tablet {
+    padding: 0px;
+}
 }
 
 .container-article__text {
-    
         color: $main-text-color;
+
+@include tablet {
+    font-weight: 400;
+        font-size: 24px;
+        line-height: 1.16;
+}
 }
 
 .container-article__req {
         padding: 16px 8px;
-    
+
         color: $main-text-color;
+
+@include tablet {
+    font-weight: 400;
+            font-size: 24px;
+            line-height: 1.16;
+        padding: 0px;
+}        
 }
 
 .container-article__third-header {
     color: $main-text-color;
+
+@include tablet {
+    color: $accent-color;
+}
 }
 
 .container-article__list-item {}
 
-.container-article__second-text {}
-
-
-@media screen and (min-width: 768px) {
-    .container-article {
-        padding: 120px 40px;
+.container-article__second-text {
+    @include tablet {
+        margin: 0px;
     }
 }
 
-@media screen and (min-width: 768px) {
-    .container-article__header {
-        font-weight: 500;
-        font-size: 56px;
-        line-height: 1;
-        padding: 0px;
-        margin-top: 0px;
-    }
-}
+
+// @media screen and (min-width: 768px) {
+//     .container-article {
+//         padding: 120px 40px;
+//     }
+// }
+
+// @media screen and (min-width: 768px) {
+//     .container-article__header {
+//         font-weight: 500;
+//         font-size: 56px;
+//         line-height: 1;
+//         padding: 0px;
+//         margin-top: 0px;
+//     }
+// }
 
 @media screen and (min-width: 768px) {
     .container-article__image-box {}
 }
 
 
-@media screen and (min-width: 768px) {
-    .container-article__image {
-        width: 387px;
-        height: 228px;
-        border-radius: 12px;
-    }
-}
+// @media screen and (min-width: 768px) {
+//     .container-article__image {
+//         width: 387px;
+//         height: 228px;
+//         border-radius: 12px;
+//     }
+// }
 
 .container-article__second-header-container {}
 
-@media screen and (min-width: 768px) {
-    .container-article__second-header {
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 1;
-        padding: 0px;
+// @media screen and (min-width: 768px) {
+//     .container-article__second-header {
+//         font-weight: 600;
+//         font-size: 24px;
+//         line-height: 1;
+//         padding: 0px;
 
-        color: $accent-color;
-    }
-}
+//         color: $accent-color;
+//     }
+// }
 
-@media screen and (min-width: 768px) {
-    .container-article__date {
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 1;
-        padding: 0px;
+// @media screen and (min-width: 768px) {
+//     .container-article__date {
+//         font-weight: 600;
+//         font-size: 24px;
+//         line-height: 1;
+//         padding: 0px;
 
-        color: $grey-text-color;
-    }
-}
+//         color: $grey-text-color;
+//     }
+// }
 
 @media screen and (min-width: 768px) {
     .container-article__general {}
 }
 
-@media screen and (min-width: 768px) {
-    .container-article__thumb {
-        padding: 0px;
-    }
-}
+// @media screen and (min-width: 768px) {
+//     .container-article__thumb {
+//         padding: 0px;
+//     }
+// }
 
-@media screen and (min-width: 768px) {
-    .container-article__text {
-        font-weight: 400;
-            font-size: 24px;
-            line-height: 1.16;
-    }
-}
+// @media screen and (min-width: 768px) {
+//     .container-article__text {
+//         font-weight: 400;
+//             font-size: 24px;
+//             line-height: 1.16;
+//     }
+// }
 
 
-@media screen and (min-width: 768px) {
-    .container-article__req {
-        font-weight: 400;
-            font-size: 24px;
-            line-height: 1.16;
-        padding: 0px;
-    }
-}
+// @media screen and (min-width: 768px) {
+//     .container-article__req {
+//         font-weight: 400;
+//             font-size: 24px;
+//             line-height: 1.16;
+//         padding: 0px;
+//     }
+// }
 
 .container-article__third-header {}
 
-@media screen and (min-width: 768px) {
-    .container-article__list {
-        color: $accent-color;
-    }
-}
+// @media screen and (min-width: 768px) {
+//     .container-article__list {
+//         color: $accent-color;
+//     }
+// }
 
 .container-article__list-item {}
 
-@media screen and (min-width: 768px) {
-    .container-article__second-text {
-        margin: 0px;
-    }
-}
+// @media screen and (min-width: 768px) {
+//     .container-article__second-text {
+//         margin: 0px;
+//     }
+// }
 
 .container-article {}
 
@@ -182,11 +246,11 @@
     .container-article__image {}
 }
 
-@media screen and (min-width: 1280px) {
-    .container-article__second-header-container {
-        display: flex;
-    }
-}
+// @media screen and (min-width: 1280px) {
+//     .container-article__second-header-container {
+//         display: flex;
+//     }
+// }
 
 .container-article__second-header {}
 
