@@ -1,27 +1,20 @@
 .footer {
-  background-color: #001414;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  position: relative;
 }
 
-.footer__container {
-  margin: 0 auto;
-  padding: 25px 32px 25px 16px;  
+.footer>.container {
+  position: relative;
+  padding: 25px 32px 25px 16px;
+  background-color: #001414;
 
   @include tablet {
     padding: 40px 50px 40px 40px;
+    display: flex;
+    justify-content: space-between;
   }
 
   @include desktop {
     padding: 40px 179px 40px 40px;
-  }
-}
-
-.footer__container {
-  width: 100%;
-  @include tablet {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -40,7 +33,7 @@
 
   // &:hover,
   &:focus {
-    color: #2196f3;
+    color: #177a30;
   }
 }
 
@@ -64,7 +57,7 @@
 
   // &:hover,
   &:focus {
-    color: #2196f3;
+    color: #177a30;
   }
 }
 
@@ -85,7 +78,7 @@
   gap: 32px;
 
   @include tablet {
-    flex-direction: row;    
+    flex-direction: row;
     gap: 16px;
   }
 
@@ -122,6 +115,6 @@
   color: #8d9289;
   // &:hover,
   &:focus {
-    color: #2196f3;
+    color: #177a30;
   }
 }
