@@ -32,7 +32,7 @@
 }
 
 .take-order {
-  background-image: url('../images/take-order/background/mob_1x.png');
+  background-image: url('../images/take-order/background/mob_1x.jpg');
   background-size: cover;
   background-position: center;
   font-family: $basic-font;
@@ -40,24 +40,24 @@
   padding-bottom: 60px;
 
   @include retina {
-    background-image: url('../images/take-order/background/mob_2x.png');
+    background-image: url('../images/take-order/background/mob_2x.jpg');
   }
 
   @include tablet {
-    background-image: url('../images/take-order/background/tab_1x.png');
+    background-image: url('../images/take-order/background/tab_1x.jpg');
     padding-top: 120px;
     padding-bottom: 120px;
 
     @include retina {
-      background-image: url('../images/take-order/background/tab_2x.png');
+      background-image: url('../images/take-order/background/tab_2x.jpg');
     }
   }
 
   @include desktop {
-    background-image: url('../images/take-order/background/desk_1x.png');
+    background-image: url('../images/take-order/background/desk_1x.jpg');
 
     @include retina {
-      background-image: url('../images/take-order/background/desk_2x.png');
+      background-image: url('../images/take-order/background/desk_2x.jpg');
     }
   }
 }
