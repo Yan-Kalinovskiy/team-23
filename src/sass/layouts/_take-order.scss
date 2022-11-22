@@ -48,50 +48,65 @@
 
 .image-order {
     margin: 0;
-    border-radius: 16px;
-
+    border-radius: 12px;
 
 }
 
+.prices {
+  display: inline-block;
+  flex-direction: row;
+}
+
+.old-price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration-line: line-through;
+  color: #8D9289;
+  margin-top: 16px;
+
+  @include tablet {
+    font-size: 24px;
+  }
+}
+
+.new-price {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  color: #86E543;
+  // margin-top: 24px;
+  margin-bottom: 16px;
+  margin-left: auto;
+
+  @include tablet {
+    font-size: 48px;
+  }
+}
+
 .card-set {
-    // display: flex;
-    gap: 16px;
+     display: flex;
+    
+}
+
+.card-set-list {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin: 0;
 }
 
 .item-card-set {
     border-radius: 4px;
+    margin: 0;
+    padding: 0;
 }
 
 .image-order-set {
   border-radius: 4px;
 }
 
-.old-price {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
-    text-decoration-line: line-through;
-    color: #8D9289;
-    margin-top: 16px;
 
-    @include tablet {
-        font-size: 24px;
-    }
-}
-
-.new-price {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 100%;
-    color: #86E543;
-    // margin-top: 24px;
-    margin-bottom: 16px;
-    margin-left: auto;
-
-    @include tablet {
-        font-size: 48px;
-    }
-}
 
 .form-title {
     font-weight: 500;
@@ -106,6 +121,31 @@
         line-height: 42px;
     }
 
+}
+
+.label-container {
+  position:relative;
+  margin-bottom: 40px;
+
+}
+
+.label-form {
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 4;
+  
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+
+    @include tablet {
+      font-size: 18px;
+    }
 }
 
 .wrap-inputs {
@@ -227,6 +267,9 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
+    display: flex;
+    flex-direction: column;
+    
        
     
 
@@ -234,6 +277,12 @@
         font-size: 32px;
         line-height: 38px;
         padding: 16px 64px;
+        
+        
+    }
+
+    @include desktop {
+    flex-direction: row;
     }
 
 }
@@ -247,6 +296,13 @@
     text-transform: uppercase;
     cursor: pointer;
     margin-bottom: 16px;
+
+    @include tablet {
+      padding: 16px 64px;
+    }
+    
+
+    
 
     &:hover,
         &:focus {
@@ -263,6 +319,8 @@
     padding: 16px 42px;
     text-transform: uppercase;
     cursor: pointer;
+
+
 
     &:hover,
         &:focus {
