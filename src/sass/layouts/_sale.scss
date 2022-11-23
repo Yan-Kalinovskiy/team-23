@@ -41,7 +41,7 @@
 
 .sale-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 44px;
   width: 100%;
   margin-bottom: 44px;
@@ -52,25 +52,23 @@
     margin-right: auto;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    margin-bottom: 48px;
-  }
-  
   @include tablet {
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 38px;
-    column-gap: 52px;
+    column-gap: 38px;
+    row-gap: 52px;
   }
 
   @include desktop {
-    row-gap: 20px;
-    column-gap: 44px;
+    column-gap: 20px;
+    row-gap: 44px;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 48px;
   }
 }
 
 .sale-item {
-  flex-basis: 285px;
+  max-width: 285px;
 
   @include tablet {
     flex-basis: calc(100% - 38px) / 2;
@@ -122,6 +120,7 @@
 }
 
 .sale-btn {
+  display: block;
   margin: 0 auto;
   width: 153px;
   height: 51px;
