@@ -17,7 +17,7 @@
   transform: translate(-50%, -50%) scaleY(1);
   width: calc(100% - 48px);
   min-height: 367px;
-  background-color: #01383a;
+  background-color: $main-bg-color;
   transition: transform 500ms linear, visibility 500ms linear,
     opacity 500ms linear;
 
@@ -113,4 +113,8 @@
     box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
       0px 4px 10px rgba(255, 255, 255, 0.1);
   }
+}
+
+.help-btn {
+  display: none;
 }
