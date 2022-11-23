@@ -1,10 +1,17 @@
 .sale__container {
   // (відступ від секції gallery має визначатися її нижнім падінгом)
   padding-bottom: 64px;
-  background-image: url(/src/images/sale/bg_sale_1x.jpeg);
-
+  background-color: $main-bg-color;
+  background-size: cover;
+  background-image: url(/src/images/sale/bg_sale_m_1x.jpeg);
   @include retina {
-    background-image: url(/src/images/sale/bg_sale_2x.jpeg);
+    background-image: url(/src/images/sale/bg_sale_m_2x.jpeg);
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-left: 80px;
+    padding-right: 80px;
+    background-position: right bottom;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -14,10 +21,18 @@
 
   @include tablet {
     padding-bottom: 120px;
+    background-image: url(/src/images/sale/bg_sale_t_1x.jpeg);
+    @include retina {
+        background-image: url(/src/images/sale/bg_sale_t_2x.jpeg);
+      }
   }
 
   @include desktop {
     padding-bottom: 136px;
+    background-image: url(/src/images/sale/bg_sale_d_1x.jpeg);
+      @include retina {
+        background-image: url(/src/images/sale/bg_sale_d_2x.jpeg);
+      }
   }
 }
 
@@ -39,7 +54,7 @@
   }
 }
 
-.sale-list {
+.sale__list {
   display: flex;
   flex-wrap: wrap;
   gap: 44px;
@@ -92,11 +107,13 @@
 }
 
 .sale-info {
+  padding-left: 8px;
   width: 100%;
 }
 
 .sale-text-name {
-  font-weight: 600;
+  width: 261px;
+  font-weight: 500;
   font-size: 22px;
   line-height: 26px;
   color: #86e543;
@@ -125,8 +142,9 @@
   color: #86e543;
 }
 
-.sale-btn {
+.sale__link {
   display: block;
+  padding: 16px 48px;
   margin: 0 auto;
   width: 153px;
   height: 51px;
