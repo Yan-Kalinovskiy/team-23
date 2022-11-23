@@ -4,8 +4,8 @@
     background-image: url(../images/background/article_background.jpg);
 
 @include tablet {
-    padding: 120px 40px;
-}
+    padding: 120px 40px 72px;
+    }
 }
 
 .container-article__header {
@@ -23,7 +23,7 @@
         line-height: 1;
         padding: 0px;
         margin-top: 0px;
-}
+    }
 }
 
 .container-article__image-box {
@@ -32,28 +32,31 @@
     
 @include tablet {
     display: flex;
-}
+    flex-wrap: wrap;
+    }
 }
 
 .container-article__image {
     width: 387px;
-    height: 336px;
 
 @include tablet {
-    width: 387px;
         height: 228px;
         border-radius: 12px;
-}
+    }
 }
 
 .container-article__second-header-container {
     @include tablet {
+        width: 248px;
+
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
     }
-    // @include desktop {
-    //     display: flex;
-    // }
+    @include desktop {
+        flex-direction: row;
+        // width: 100%;
+    }
 }
 
 .container-article__second-header {
@@ -72,7 +75,7 @@
         padding: 0px;
 
         color: $accent-color;
-}
+    }
 }
 
 .container-article__date {
@@ -89,9 +92,7 @@
         font-size: 24px;
         line-height: 1;
         padding: 0px;
-
-        color: $grey-text-color;
-}
+    }
 }
 
 .container-article__general {
@@ -105,7 +106,10 @@
 
 @include tablet {
     padding: 0px;
-}
+    }
+@include desktop {
+    width: 600px;
+    }
 }
 
 .container-article__text {
@@ -115,11 +119,12 @@
     font-weight: 400;
         font-size: 24px;
         line-height: 1.16;
-}
+    }
 }
 
 .container-article__req {
-        padding: 16px 8px;
+        padding-right:8px;
+        padding-left: 8px;
 
         color: $main-text-color;
 
@@ -127,8 +132,8 @@
     font-weight: 400;
             font-size: 24px;
             line-height: 1.16;
-        padding: 0px;
-}        
+        padding-top: 48px;
+    }        
 }
 
 .container-article__third-header {
@@ -136,12 +141,23 @@
 
 @include tablet {
     color: $accent-color;
+    }
 }
+
+.container-article__list {
+    padding-bottom: 48px;
+    list-style-type: decimal;
+
+@include tablet {
+    padding: 0px;
+    color: $accent-color;
+    }
 }
 
 .container-article__list-item {}
 
 .container-article__second-text {
+    padding-bottom: 48px;
     @include tablet {
         margin: 0px;
     }

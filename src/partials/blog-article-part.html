@@ -1,11 +1,19 @@
-<div class="container-article">
+<section class="blog-article">
+    <div class="container-article container">
             <h1 class="container-article__header">
                 Guide to Picking The Right Gaming Headset
             </h1>
             <div class="container-article__image-box">
+                <picture>
+                    <source media="(min-width: 1280px)"
+                    srcset="/src/images/blog_article/img_blog-article_1d_1280_1x.jpg, /src/images/blog_article/img_blog-article_2d_1280_2x.jpg">
+                    <source media="(min-width: 768px)"
+                    srcset="/src/images/blog_article/img_blog-article_1t_768_1x.jpg, /src/images/blog_article/img_blog-article_2t_768_2x.jpg">
+                    <source media="(min-width: 480px)"
+                    srcset="/src/images/blog_article/img_blog-article_1m_480_1x.jpg, /src/images/blog_article/img_blog-article_2m_480_2x.jpg"
+                </picture>
             <img
-                srcset="/src/images/article_1x_mobile.jpg 1x,"
-                src="/src/images/article_1x_mobile.jpg"
+                src="/src/images/blog_article/img_blog-article_1m_480_1x.jpg"
                 alt="Hand getting through the headsets"
                 class="container-article__image"
             />
@@ -17,9 +25,7 @@
                 >Updated on September 21, 2022</span
             >
             </div>
-            </div>
-            <div class="container-article__general">
-                <div class="container-article__thumb">
+            <div class="container-article__thumb">
                     <p class="container-article__text">
                         Learn how to choose an amazing gaming headset with this
                         checklist of just 9 surprisingly simple steps.<br></br>
@@ -34,6 +40,8 @@
                         look for in a gaming headset
                     </p>
                 </div>
+            </div>
+            <div class="container-article__general">
                 <div class="container-article__req">
                     <h3 class="container-article__third-header">
                         9-Step Checklist to Pick an Amazing Gaming Headset
@@ -94,3 +102,4 @@
                 </div>
             </div>
         </div>
+    </section>
