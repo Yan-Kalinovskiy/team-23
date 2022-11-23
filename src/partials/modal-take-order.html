@@ -1,0 +1,42 @@
+<!-- Кнопки для тестування скріпта -->
+<!-- <button type="button" data-modal-buy-open>
+  Buy it now
+</button>
+<button type="button" data-modal-add-open>
+  Add to cart
+</button> -->
+<!-- /// -->
+<div class="backdrop is-hidden" data-modal-buy>
+  <div class="modal modal--buy-it-now" >
+    <button
+      class="modal__btn-close"
+      type="button"
+      data-modal-buy-close
+      aria-label="Закрити"
+    >
+      <svg class="modal__icon" width="40" height="40">
+        <use href="./images/modal/symbol-defs.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <p class="modal__text">
+      Thank you for your order! We will contact you soon!
+    </p>
+    <a class="modal__link link" href="./accessories.html" data-modal-buy-link>Keep shopping</a>
+  </div>
+</div>
+<div class="backdrop is-hidden" data-modal-add>
+  <div class="modal modal--add-to-cart">
+    <button
+      class="modal__btn-close"
+      type="button"
+      data-modal-add-close
+      aria-label="Закрити"
+    >
+      <svg class="modal__icon" width="40" height="40">
+        <use href="./images/modal/symbol-defs.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <p class="modal__text">Excellent choice! Let's move on to the checkout!</p>
+    <a class="modal__link link" href="./index.html" data-modal-add-link>Let's go!</a>
+  </div>
+</div>

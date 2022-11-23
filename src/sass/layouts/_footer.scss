@@ -111,10 +111,12 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  text-transform: capitalize;
+  // text-transform: capitalize;
   color: #8d9289;
+  
   // &:hover,
   &:focus {
     color: #177a30;
   }
 }
+
