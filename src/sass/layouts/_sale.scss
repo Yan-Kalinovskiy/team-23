@@ -1,4 +1,4 @@
-.sale_container {
+.sale__container {
   // (відступ від секції gallery має визначатися її нижнім падінгом)
   padding-bottom: 64px;
   background-image: url(/src/images/sale/bg_sale_1x.jpeg);
@@ -21,7 +21,7 @@
   }
 }
 
-.sale_title {
+.sale__title {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -83,6 +83,12 @@
   @media screen and (max-width: 768px) {
     display: none;
   }
+}
+
+.sale-item__wrap {
+  margin-bottom: 8px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .sale-info {
