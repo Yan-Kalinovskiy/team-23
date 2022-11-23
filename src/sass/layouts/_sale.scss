@@ -44,12 +44,18 @@
   flex-direction: column;
   gap: 44px;
   width: 100%;
+  margin-bottom: 44px;
 
   @media screen and (max-width: 767px) {
     width: 285px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 48px;
+  }
+  
   @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
@@ -75,7 +81,7 @@
   }
 }
 
-.media-pad {
+.mob-hidden {
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -116,24 +122,21 @@
 }
 
 .sale-btn {
-  min-width: 153px;
+  margin: 0 auto;
+  width: 153px;
   height: 51px;
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  // margin-left: 83px;
-  // margin-top: 24px;
-  // margin-bottom: 48px;
-
+  
   font-weight: 700;
   font-size: 16px;
-  line-height: 19px;
-  text-align: right;
+  line-height: 1.17;
+  text-align: center;
   color: #01383a;
 
-  border: 0;
-  display: inline-flex;
+  @include tablet {
+    width: 195px;
+    height: 65px;
+    font-size: 28px;
+  }
 }
