@@ -1,2 +1,2 @@
 import './scripts/header-menu';
-import './scripts/modal';
+import './scripts/modal-take-order';
