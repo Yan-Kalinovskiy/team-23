@@ -26,7 +26,14 @@
 }
 }
 
-.container-article__image-box {}
+.container-article__image-box {
+    margin-left: -16px;
+    margin-right: -16px;
+    
+@include tablet {
+    display: flex;
+}
+}
 
 .container-article__image {
     width: 387px;
@@ -40,9 +47,13 @@
 }
 
 .container-article__second-header-container {
-    @include desktop {
+    @include tablet {
         display: flex;
+        flex-direction: column;
     }
+    // @include desktop {
+    //     display: flex;
+    // }
 }
 
 .container-article__second-header {
