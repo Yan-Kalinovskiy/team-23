@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacts</title>
-  <!-- Лінки на фавікон -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-  <!-- Лінки на передзавантаження шрифтів -->
-  <link rel="preload" href="./fonts/Roboto-Regular.ttf" as="font">
-  <link rel="preload" href="./fonts/Roboto-Bold.ttf" as="font">
-  <link rel="preload" href="./fonts/OpenSans-SemiBold.ttf" as="font">
-  <!-- // -->
-  <link rel="stylesheet" href="./sass/main.scss">
-</head>
-<body>
-  <include src="./partials/header.html"></include>
-  <main>
-    <include src="./partials/contacts-part.html"></include>
-  </main>
-  <include src="./partials/footer.html"></include>
-  <include src="./partials/modal-take-order.html"></include>
-  <include src="./partials/modal-contacts.html"></include>
-  <script type="module" src="./contacts.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <!-- Лінки на фавікон -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <!-- Лінки на передзавантаження шрифтів -->
+    <link rel="preload" href="./fonts/Roboto-Regular.ttf" as="font" />
+    <link rel="preload" href="./fonts/Roboto-Bold.ttf" as="font" />
+    <link rel="preload" href="./fonts/OpenSans-SemiBold.ttf" as="font" />
+    <!-- // -->
+    <link rel="stylesheet" href="./sass/main.scss" />
+  </head>
+  <body>
+    <include src="./partials/header.html"></include>
+    <main>
+      <include src="./partials/contacts-part.html"></include>
+    </main>
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/modal-take-order.html"></include>
+    <include src="./partials/modal-contacts.html"></include>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./contacts.js"></script>
+  </body>
 </html>
