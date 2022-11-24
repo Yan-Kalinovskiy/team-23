@@ -11,6 +11,14 @@
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url(../fonts/Roboto-Bold.ttf);
@@ -25,7 +33,7 @@
 }
 
 body {
-  // color: $main-text-color;
+  color: $main-text-color;
   font-family: $basic-font;
 }
 
