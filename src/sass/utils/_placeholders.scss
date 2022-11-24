@@ -9,13 +9,13 @@
     background-image: url(/src/images/bg/bg_top-line_m_1x.png),
       url(/src/images/bg/bg_bottom-line_m_1x.png),
       url(/src/images/bg/bg_m_1x.jpeg);
-    // background-position: -104px 48px,
-    //   -99px 55px;
+    background-position: -104px 152px,
+      -99px 159px, 0 104px;
     @include retina {
       background-image: url(/src/images/bg/bg_top-line_m_2x.png),
         url(/src/images/bg/bg_bottom-line_m_2x.png),
         url(/src/images/bg/bg_m_2x.jpeg);
-      // background-position: -329px 25px, -321px 34px;
+      background-position: -329px 129px, -321px 138px, 0 104px;
     }
   }
 }
@@ -27,12 +27,11 @@
   @media screen and (max-width: 767px) {
     background-image: url(/src/images/bg/bg_top-line_m_1x.png),
       url(/src/images/bg/bg_bottom-line_m_1x.png);
-    // background-position: -104px 48px,
-    //   -99px 55px;
+    background-position: -104px 152px, -99px 159px, 0 104px;
     @include retina {
       background-image: url(/src/images/bg/bg_top-line_m_2x.png),
         url(/src/images/bg/bg_bottom-line_m_2x.png);
-      // background-position: -329px 25px, -321px 34px;
+      background-position: -329px 129px, -321px 138px, 0 104px;
     }
   }
 }
@@ -44,12 +43,12 @@
     background-image: url(/src/images/bg/bg_top-line_t_d_1x.png),
       url(/src/images/bg/bg_bottom-line_t_d_1x.png),
       url(/src/images/bg/bg_t_1x.jpeg);
-    // background-position: -30px 163px, -28px 171px, 0 0;
+    background-position: -30px 299px, -28px 307px, 0 136px;
     @include retina {
       background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
         url(/src/images/bg/bg_bottom-line_t_d_2x.png),
         url(/src/images/bg/bg_t_2x.jpeg);
-      // background-position: -470px 145px, -472px 156px, 0 0;
+      background-position: -470px 281px, -472px 292px, 0 136px;
     }
   }
 }
@@ -60,12 +59,12 @@
     background-image: url(/src/images/bg/bg_top-line_t_d_1x.png),
       url(/src/images/bg/bg_bottom-line_t_d_1x.png),
       url(/src/images/bg/bg_t-sale_d-long_1x.jpeg);
-    // background-position: -30px 163px, -28px 171px, 0 0;
+    background-position: -30px 299px, -28px 307px, 0 136px;
     @include retina {
       background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
         url(/src/images/bg/bg_bottom-line_t_d_2x.png),
         url(/src/images/bg/bg_t-sale_d-long_2x.jpeg);
-      // background-position: -470px 145px, -472px 156px, 0 0;
+      background-position: -470px 281px, -472px 292px, 0 136px;
     }
   }
 }
@@ -75,11 +74,11 @@
   @include tablet {
     background-image: url(/src/images/bg/bg_top-line_t_d_1x.png),
       url(/src/images/bg/bg_bottom-line_t_d_1x.png);
-    // background-position: -30px 163px, -28px 171px;
+    background-position: -30px 299px, -28px 307px, 0 136px;
     @include retina {
       background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
         url(/src/images/bg/bg_bottom-line_t_d_2x.png);
-      // background-position: -470px 145px, -472px 156px;
+      background-position: -470px 281px, -472px 292px, 0 136px;
     }
   }
 }
@@ -91,14 +90,11 @@
     background-image: url(/src/images/bg/bg_top-line_t_d_1x.png),
       url(/src/images/bg/bg_bottom-line_t_d_1x.png),
       url(/src/images/bg/bg_d_1x.jpeg);
-    // background-position: 0px 186px, 0px 194px, 0 136px;
-    // background-position: -26px 162px, -24px 171px, 0 0;
+    background-position: -26px 298px, -24px 307px, 0 136px;
     @include retina {
       background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
         url(/src/images/bg/bg_bottom-line_t_d_2x.png),
-        url(/src/images/bg/bg_d_2x.jpeg);
-// background-position: 0px 186px, 0px 194px, 0 136px;
-      // background-position: -468px 145px, -472px 156px, 0 0;
+        url(/src/images/bg/bg_d_2x.jpeg);background-position: -468px 281px, -472px 292px, 0 136px;
     }
   }
 }
@@ -109,12 +105,12 @@
     background-image: url(/src/images/bg/bg_top-line_t_d_1x.png),
       url(/src/images/bg/bg_bottom-line_t_d_1x.png),
       url(/src/images/bg/bg_t-sale_d-long_1x.jpeg);
-    // background-position: -26px 162px, -24px 171px, 0 0;
+    background-position: -26px 298px, -24px 307px, 0 136px;
     @include retina {
       background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
         url(/src/images/bg/bg_bottom-line_t_d_2x.png),
         url(/src/images/bg/bg_t-sale_d-long_2x.jpeg);
-      // background-position: -468px 145px, -472px 156px, 0 0;
+      background-position: -468px 281px, -472px 292px, 0 136px;
     }
   }
 }
@@ -124,11 +120,11 @@
   @include desktop {
       background-image: url(/src/images/bg/bg_top-line_t_d_1x.png),
         url(/src/images/bg/bg_bottom-line_t_d_1x.png);
-      // background-position: -26px 162px, -24px 171px;
+      background-position: -26px 298px, -24px 307px, 0 136px;
       @include retina {
         background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
           url(/src/images/bg/bg_bottom-line_t_d_2x.png);
-        // background-position: -468px 145px, -472px 156px;
+        background-position: -468px 281px, -472px 292px, 0 136px;
       }
     }
 }
