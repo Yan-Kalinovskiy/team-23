@@ -63,3 +63,10 @@ img {
     width: 1280px;
   }
 }
+
+.add-padding {
+  padding-top: 144px;
+  @include tablet {
+    padding-top: 256px;
+  }
+}
