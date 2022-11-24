@@ -1,4 +1,5 @@
 //!
+
 .wrap {
   max-width: 288px;
   margin: 0 auto;
@@ -49,9 +50,10 @@
   background-image: url('../images/take-order/background/mob_1x.jpg');
   background-size: cover;
   // background-position: center;
+  background-position: top;
   font-family: $basic-font;
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding-top: 144px;
+  padding-bottom: 48px;
 
   @include retina {
     background-image: url('../images/take-order/background/mob_2x.jpg');
@@ -59,7 +61,7 @@
 
   @include tablet {
     background-image: url('../images/take-order/background/tab_1x.jpg');
-    padding-top: 120px;
+    padding-top: 256px;
     padding-bottom: 120px;
 
     @include retina {
@@ -103,12 +105,15 @@
   margin-bottom: 16px;
 
   @include tablet {
+    width: 690px;
+    margin-bottom: 51px;
+
     font-size: 56px;
     line-height: calc(66px / 56px);
   }
 
   @include desktop {
-    margin-bottom: 32px;
+    margin-bottom: 75px;
   }
 }
 
