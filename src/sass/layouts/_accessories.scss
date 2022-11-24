@@ -1,9 +1,12 @@
-.hide {
-  display: none;
-}
-
 .nav-buttons__container {
+  margin-bottom: -1px;
+  padding-bottom: 48px;
+
   background-color: $main-bg-color;
+
+  @include tablet {
+    padding-bottom: 120px;
+  }
 }
 
 .nav-buttons__list {
@@ -107,7 +110,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     max-width: 100%;
   }
 
@@ -122,12 +124,10 @@
 
   @include tablet {
     width: 285px;
-    // width: calc(100% - 30px) / 2;
   }
 
   @include desktop {
     width: 285px;
-    // width: calc(100% - 60px) / 4;
   }
 
   &:hover .overlay,
@@ -138,11 +138,10 @@
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.cards__item + .cards__item {
-  margin-top: 30px;
-
+.cards__item:not(:last-child) {
+  margin-bottom: 30px;
   @include tablet {
-    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -208,14 +207,6 @@
   margin: 8px 0 0 0;
   padding: 0 8px 8px 8px;
   border-top: none;
-
-  @include tablet {
-    height: 150px;
-  }
-
-  @include desktop {
-    height: auto;
-  }
 }
 
 .cards__title {
@@ -254,4 +245,8 @@
   line-height: 0.8;
 
   color: $secondary-text-color;
+}
+
+.hide {
+  display: none;
 }
