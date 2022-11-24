@@ -2,11 +2,9 @@
   font-family: $basic-font;
   font-style: normal;
   background-image: url(../images/background/article_background.jpg);
-  padding-top: 40px;
   padding-bottom: 48px;
 
   @include tablet {
-    padding-top: 120px;
     padding-bottom: 120px;
   }
   // padding: 40px 16px 48px;

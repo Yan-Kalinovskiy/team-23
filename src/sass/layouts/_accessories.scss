@@ -1,10 +1,5 @@
 .nav-buttons__container {
   background-color: $main-bg-color;
-  padding: 40px 0;
-
-  @include tablet {
-    padding: 120px 0;
-  }
 }
 
 .nav-buttons__list {
