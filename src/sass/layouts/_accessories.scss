@@ -64,14 +64,15 @@
 }
 
 .cards__title-container {
-  width: 100%;
+  max-width: 320px;
 
-  margin: 32px 0 27px 0;
+  margin: 32px auto 27px;
 
   display: flex;
   justify-content: flex-start;
 
   @include tablet {
+    max-width: 100%;
     padding: 0 0 0 126px;
     margin: 72px 0 51px 0;
   }
