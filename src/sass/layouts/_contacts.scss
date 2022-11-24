@@ -1,49 +1,52 @@
 .contacts-part__container {
     padding-bottom: 48px;
-    background: $green-text-color;
-    
-    background-image: url(../images/contacts-part/img_vector_\ 26_1x.png),
-        url(../images/contacts-part/img_vector_\ 27_1x.png);
-        background-repeat: no-repeat;
-        background-position: -104px 48px, -99px 55px;
-
-        @include retina {
-            background-image: url(../images/contacts-part/img_vector_\ 26_2x.png),
-                url(../images/contacts-part/img_vector_\ 27_2x.png);
-                background-position: -329px 25px, -321px 34px;
-        }
-                     
-    @include tablet {
-        padding-bottom: 120px;
-        
-        background-image: url(../images/contacts-part/img_vector_\ 24_1x.png),
-            url(../images/contacts-part/img_vector_\ 22_1x.png),
-            url(../images/contacts-part/img_contacts_bg_2_1x.png);
-            background-repeat: no-repeat;
-            background-position: -30px 163px, -28px 171px, 0 0;
-                    
-        @include retina {
-            background-image: url(../images/contacts-part/img_vector_\ 24_2x.png),
-                url(../images/contacts-part/img_vector_\ 22_2x.png),
-                url(../images/contacts-part/img_contacts_bg_2_2x.png);
-                background-position: -470px 145px, -472px 156px, 0 0;
-        }
-    }
-
-    @include desktop {
-        background-image: url(../images/contacts-part/img_vector_\ 24_1x.png),
-            url(../images/contacts-part/img_vector_\ 22_1x.png),
-            url(../images/contacts-part/img_contacts_bg_3_1x.png);
-            background-position: -26px 162px, -24px 171px, 0 0;
-    
-        @include retina {
-            background-image: url(../images/contacts-part/img_vector_\ 24_2x.png),
-                url(../images/contacts-part/img_vector_\ 22_2x.png),
-                url(../images/contacts-part/img_contacts_bg_3_2x.png);
-                background-position: -468px 145px, -472px 156px, 0 0;
-        }
-    }
+    @extend %bg_m_2;
+    @extend %bg_t_1;
+    @extend %bg_d_1;
 }
+
+    // background: $green-text-color;
+    
+    // background-image: url(../images/contacts-part/img_vector_\ 26_1x.png),
+    //     url(../images/contacts-part/img_vector_\ 27_1x.png);
+    //     background-repeat: no-repeat;
+    //     background-position: -104px 48px, -99px 55px;
+
+    //     @include retina {
+    //         background-image: url(../images/contacts-part/img_vector_\ 26_2x.png),
+    //             url(../images/contacts-part/img_vector_\ 27_2x.png);
+    //             background-position: -329px 25px, -321px 34px;
+    //     }                
+    // @include tablet {
+    //     padding-bottom: 120px;
+        
+    //     background-image: url(../images/contacts-part/img_vector_\ 24_1x.png),
+    //         url(../images/contacts-part/img_vector_\ 22_1x.png),
+    //         url(../images/contacts-part/img_contacts_bg_2_1x.png);
+    //         background-repeat: no-repeat;
+    //         background-position: -30px 163px, -28px 171px, 0 0;
+                    
+    //     @include retina {
+    //         background-image: url(../images/contacts-part/img_vector_\ 24_2x.png),
+    //             url(../images/contacts-part/img_vector_\ 22_2x.png),
+    //             url(../images/contacts-part/img_contacts_bg_2_2x.png);
+    //             background-position: -470px 145px, -472px 156px, 0 0;
+    //     }
+    // }
+
+    // @include desktop {
+    //     background-image: url(../images/contacts-part/img_vector_\ 24_1x.png),
+    //         url(../images/contacts-part/img_vector_\ 22_1x.png),
+    //         url(../images/contacts-part/img_contacts_bg_3_1x.png);
+    //         background-position: -26px 162px, -24px 171px, 0 0;
+    
+    //     @include retina {
+    //         background-image: url(../images/contacts-part/img_vector_\ 24_2x.png),
+    //             url(../images/contacts-part/img_vector_\ 22_2x.png),
+    //             url(../images/contacts-part/img_contacts_bg_3_2x.png);
+    //             background-position: -468px 145px, -472px 156px, 0 0;
+    //     }
+    // }
 
 .contacts-part__picture {
     @media screen and (max-width: 767px) {
