@@ -390,16 +390,17 @@
   text-transform: capitalize;
   appearance: none;
   color: $main-text-color;
+
   cursor: pointer;
 
+  transform: translateY(0%);
   transition: transform 250ms linear;
-
-  .contacts-input:focus + &,
-  .contacts-input:not(:placeholder-shown) + & {
-    transform: translateY(-100%);
-  }
 }
 
+.contacts-form__input:focus + .contacts-form__label,
+.contacts-form__input:not(:placeholder-shown) + .contacts-form__label {
+  transform: translateY(-100%);
+}
 .contacts-textarea__wrap {
   // position: relative;
   @media screen and (min-width: 1280px) {
