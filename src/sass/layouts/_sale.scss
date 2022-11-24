@@ -9,8 +9,6 @@
   }
 
   @media screen and (max-width: 767px) {
-    padding-left: 80px;
-    padding-right: 80px;
     background-position: right bottom;
   }
 
@@ -41,15 +39,20 @@
   font-size: 24px;
   line-height: 1.17;
   color: #ffffff;
-  padding-left: 80px;
+  padding-left: 62px;
   margin-bottom: 35px;
 
+  @include mobile {
+    padding-left: 142px;
+  }
+
   @include tablet {
-    font-size: 56px;
     margin-bottom: 51px;
+    font-size: 56px;
   }
 
   @include desktop {
+    padding-left: 102px;
     margin-bottom: 43px;
   }
 }
@@ -57,7 +60,7 @@
 .sale-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 44px;
+  row-gap: 44px;
   width: 100%;
   margin-bottom: 44px;
 
