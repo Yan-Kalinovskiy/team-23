@@ -1,0 +1,133 @@
+// Backgrounds
+
+// !!!MOBILE!!!
+// For sections: Sale, Accessories, Take-order
+%bg_m_1 {
+  background-color: $main-bg-color;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    background-image: url(/src/images/bg/bg_top-line_m_1x.png),
+      url(/src/images/bg/bg_bottom-line_m_1x.png),
+      url(/src/images/bg/bg_m_1x.jpeg);
+    // background-position: -104px 48px,
+    //   -99px 55px;
+    @include retina {
+      background-image: url(/src/images/bg/bg_top-line_m_2x.png),
+        url(/src/images/bg/bg_bottom-line_m_2x.png),
+        url(/src/images/bg/bg_m_2x.jpeg);
+      // background-position: -329px 25px, -321px 34px;
+    }
+  }
+}
+
+// For sections: Contacts, Blog, Blog-article (заливка+лінії)
+%bg_m_2 {
+  background-color: $main-bg-color;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    background-image: url(/src/images/bg/bg_top-line_m_1x.png),
+      url(/src/images/bg/bg_bottom-line_m_1x.png);
+
+    // background-position: -104px 48px,
+    //   -99px 55px;
+    @include retina {
+      background-image: url(/src/images/bg/bg_top-line_m_2x.png),
+        url(/src/images/bg/bg_bottom-line_m_2x.png);
+      // background-position: -329px 25px, -321px 34px;
+    }
+  }
+}
+
+// !!!TABLET!!!
+// For sections: Accessories, Take-order, Contacts, Blog
+%bg_t_1 {
+  @include tablet {
+    background-image: url(/src/images/bg/bg_top-line_t_1x.png),
+      url(/src/images/bg/bg_bottom-line_t_1x.png),
+      url(/src/images/bg/bg_t_1x.jpeg);
+    // background-position: -30px 163px, -28px 171px, 0 0;
+    @include retina {
+      background-image: url(/src/images/bg/bg_top-line_t_2x.png),
+        url(/src/images/bg/bg_bottom-line_t_2x.png),
+        url(/src/images/bg/bg_t_2x.jpeg);
+      // background-position: -470px 145px, -472px 156px, 0 0;
+    }
+  }
+}
+
+// For section: Sale
+%bg_t_sale {
+  @include tablet {
+    background-image: url(/src/images/bg/bg_top-line_t_1x.png),
+      url(/src/images/bg/bg_bottom-line_t_1x.png),
+      url(/src/images/bg/bg_t-sale_d-long_1x.jpeg);
+    // background-position: -30px 163px, -28px 171px, 0 0;
+    @include retina {
+      background-image: url(/src/images/bg/bg_top-line_t_2x.png),
+        url(/src/images/bg/bg_bottom-line_t_2x.png),
+        url(/src/images/bg/bg_t-sale_d-long_2x.jpeg);
+      // background-position: -470px 145px, -472px 156px, 0 0;
+    }
+  }
+}
+
+// For section: Blog Article (заливка+лінії)
+%bg_t_bl-art {
+  @include tablet {
+    background-image: url(/src/images/bg/bg_top-line_t_1x.png),
+      url(/src/images/bg/bg_bottom-line_t_1x.png);
+    // background-position: -30px 163px, -28px 171px;
+    @include retina {
+      background-image: url(/src/images/bg/bg_top-line_t_2x.png),
+        url(/src/images/bg/bg_bottom-line_t_2x.png);
+      // background-position: -470px 145px, -472px 156px;
+    }
+  }
+}
+
+// !!!DESKTOP!!!
+// For sections: Sale, Take-order, Contacts
+%bg_d_1 {
+  @include desktop {
+    background-image: url(/src/images/bg/bg_top-line_d_1x.png),
+      url(/src/images/bg/bg_bottom-line_d_1x.png),
+      url(/src/images/bg/bg_d_1x.jpeg);
+    // background-position: -26px 162px, -24px 171px, 0 0;
+    @include retina {
+      background-image: url(/src/images/bg/bg_top-line_d_2x.png),
+        url(/src/images/bg/bg_bottom-line_d_2x.png),
+        url(/src/images/bg/bg_d_2x.jpeg);
+      // background-position: -468px 145px, -472px 156px, 0 0;
+    }
+  }
+}
+
+// For sections: Accessories, Blog
+%bg_d_2 {
+  @include desktop {
+    background-image: url(/src/images/bg/bg_top-line_d_1x.png),
+      url(/src/images/bg/bg_bottom-line_d_1x.png),
+      url(/src/images/bg/bg_t-sale_d-long_1x.jpeg);
+    // background-position: -26px 162px, -24px 171px, 0 0;
+    @include retina {
+      background-image: url(/src/images/bg/bg_top-line_d_2x.png),
+        url(/src/images/bg/bg_bottom-line_d_2x.png),
+        url(/src/images/bg/bg_t-sale_d-long_2x.jpeg);
+      // background-position: -468px 145px, -472px 156px, 0 0;
+    }
+  }
+}
+
+// For section: Blog Article (заливка+лінії)
+%bg_d_bl-art {
+  @include desktop {
+      background-image: url(/src/images/bg/bg_top-line_d_1x.png),
+        url(/src/images/bg/bg_bottom-line_d_1x.png);
+      // background-position: -26px 162px, -24px 171px;
+      @include retina {
+        background-image: url(/src/images/bg/bg_top-line_d_2x.png),
+          url(/src/images/bg/bg_bottom-line_d_2x.png);
+        // background-position: -468px 145px, -472px 156px;
+      }
+    }
+}
