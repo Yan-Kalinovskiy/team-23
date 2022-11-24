@@ -80,19 +80,24 @@
 
 .order {
   display: block;
+  margin-bottom: 16px;
+
   font-weight: 500;
   font-size: 24px;
   line-height: calc(28px / 24px);
+
   color: $main-text-color;
-  margin-bottom: 35px;
 
   @include tablet {
+    margin-bottom: 51px;
+    margin-left: 99px;
+
     font-size: 56px;
     line-height: calc(66px / 56px);
-    margin-left: 99px;
   }
 
   @include desktop {
+    margin-bottom: 75px;
     margin-left: 142px;
   }
 }
@@ -106,14 +111,14 @@
 
   @include tablet {
     width: 690px;
-    margin-bottom: 51px;
+    margin-bottom: 24px;
 
     font-size: 56px;
     line-height: calc(66px / 56px);
   }
 
   @include desktop {
-    margin-bottom: 75px;
+    margin-bottom: 32px;
   }
 }
 
@@ -155,7 +160,7 @@
   @include desktop {
     flex-direction: row;
     justify-content: flex-start;
-    gap: 56px;
+    gap: 70px;
     margin-top: 0;
     margin-bottom: 40px;
     display: flex;
@@ -367,6 +372,7 @@
 
 .contacts-form__input {
   width: 100%;
+  padding-left: 60px;
 
   outline: transparent;
   border: none;
@@ -393,14 +399,9 @@
 
   cursor: pointer;
 
-  transform: translateY(0%);
   transition: transform 250ms linear;
 }
 
-.contacts-form__input:focus + .contacts-form__label,
-.contacts-form__input:not(:placeholder-shown) + .contacts-form__label {
-  transform: translateY(-100%);
-}
 .contacts-textarea__wrap {
   // position: relative;
   @media screen and (min-width: 1280px) {
