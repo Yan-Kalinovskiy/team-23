@@ -52,7 +52,6 @@
 
   transition: background-color $transition-time,
     color $transition-time;
-  transition: all 0.25s 0s;
 
   &:hover,
   &:focus {
