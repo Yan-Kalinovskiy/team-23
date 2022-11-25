@@ -101,6 +101,8 @@
   text-align: center;
   text-transform: uppercase;
   color: #01383a;
+  transition: background-color $transition-time,
+      color $transition-time;
 
   @include mobile {
     width: 306px;

@@ -151,6 +151,13 @@
   line-height: 1.17;
   text-align: center;
   color: #01383a;
+  transition: background-color $transition-time,
+      color $transition-time;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5), 0px 4px 10px rgba(134, 229, 67, 0.1);
+  }
 
   @include tablet {
     width: 195px;
