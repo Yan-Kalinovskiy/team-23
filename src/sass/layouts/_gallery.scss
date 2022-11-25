@@ -1,35 +1,29 @@
 .gallery {
   padding-bottom: 48px;
 
-  @include tablet {
-    padding: 120px 0;
+  background-image: url(../images/gallery/img_gallery-bg_1d_1x.jpg);
+
+  @include retina {
+    background-image: url(../images/gallery/img_gallery-bg_1d_2x.jpg);
+    background-size: cover;
   }
 
-  @include desktop {
-    // padding: 120px 0;
+  @include tablet {
+    padding: 120px 0;
   }
 }
 .swiper-wrap {
   max-width: 480px;
   margin: 0 auto;
 
-  // background-color: #01383a;
   background-color: transparent;
 
   @include tablet {
     max-width: 768px;
-    // padding: 0 0 120px 0;
   }
 
   @include desktop {
     max-width: 1280px;
-
-    background-image: url(../images/gallery/img_gallery-bg_1d_1x.jpg);
-
-    @include retina {
-      background-image: url(../images/gallery/img_gallery-bg_1d_2x.jpg);
-      background-size: 100%;
-    }
   }
 }
 
@@ -40,6 +34,7 @@
 
 .swiper-wrapper {
   margin-bottom: 24px;
+  gap: 2px;
 
   @include tablet {
     margin-bottom: 32px;
