@@ -7,201 +7,167 @@
 @extend %bg_lines
 }
 
-.wrap__container {
-   margin-right: -16px;
-   margin-left: -16px;
+// ----------------- hidden images ------------------------
 
-   @include tablet {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between
+.chapter__wrap-image-first {
+   @media screen and (max-width: 1279px) {
+      display: none;
    }
 }
-.blog-subtitles {
 
-   @include tablet {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-   }
+.chapter__wrap-image-second {
    @include desktop {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row;
-      //width: 692px;
-   }
-}
-
-.blog__texts {
-   @include desktop {
-      width: 693px;
-   }
-}
-
-.blog__description {
-   @include desktop {
-      display: flex;
-      flex-direction: column;
-      margin-left: 40px;
-   }
-}
-
-.blog__titless {
-
-}
-.blog__titles-one {
-         @include desktop {
-            display: none;
-         }
-}
-
-.blog__titles-two {
-   display: none;
-   @include desktop {
-      display: block;
-      width: 692px;
-   }
-}
-
-.blog__tit {
-   @include desktop {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-start;
-   }
-}
-
-//.blog__titles {
-//   @include tablet {
-//      display: flex;
-//      flex-wrap: wrap;
-//   }
-//   @include desktop {
-//      width: 692px;
-//      flex-direction: row-reverse;
-//   }
-//}
-
-// .blog__container {
-//          background-repeat: no-repeat;
-//          background-position: center;
-//          background-size: cover;
-//          background-image: url('../images/blog-part/img_blog_bg_t_1x.jpg');
-      
-//          @media (min-device-pixel-ratio: 2),
-//          (-webkit-min-device-pixel-ratio: 2),
-//          (min-resolution: 192dpi),
-//          (min-resolution: 2dppx) {
-//             background-image: url('../images/blog-part/img_blog_bg_t_2x.jpg');
-//          }
-      
-//          @media screen and (min-width: 1280px) {
-//             background-image: url('../images/blog-part/img_blog_bg_d_1x.jpg');
-      
-//             @media (min-device-pixel-ratio: 2),
-//             (-webkit-min-device-pixel-ratio: 2),
-//             (min-resolution: 192dpi),
-//             (min-resolution: 2dppx) {
-//                background-image: url('../images/blog-part/img_blog_bg_d_2x.jpg');
-//             }
-//          }
-// }
-
-.blog__title-first {
-   margin-bottom: 31px;
-   font-weight: 500;
-   color: #FFFFFF;
-
-   @include tablet {
-      margin-bottom: 75px;
-      font-size: 56px;
-      line-height: 1.18;
+      display: none;
    }
 }
 
 .blog__title {
+   margin-bottom: 31px;
+   font-size: 24px;
+   font-weight: 500;
+   line-height: calc(28 / 24);
+   color: $main-text-color;
+
+   @include tablet {
+      margin-bottom: 67px;
+      font-size: 56px;
+      line-height: calc(66 / 56);
+   }
+   @include tablet {
+      margin-bottom: 75px;
+   }
+}
+
+.chapter__title {
+   font-size: 24px;
+   font-weight: 500;
+   line-height: calc(28 / 24);
+   color: $main-text-color;
+
+   @include tablet {
+      font-size: 56px;
+      line-height: 1;
+   }
+}
+
+.chapter__author {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
    margin-bottom: 16px;
    font-weight: 500;
-   line-height: 1.18;
-   color: #FFFFFF;
+   font-size: 16px;
+   line-height: 100%;
+   color: $main-text-color;
 
    @include tablet {
-      font-size: 56px;
+      width: 261px;
+      font-size: 24px;
+      gap: 32px;
    }
    @include desktop {
-      margin-bottom: 52px;
+      flex-direction: row;
+      width: 692px;
+      justify-content: space-between;
    }
 }
 
-.blog__title-a {
-   font-weight: 500;
-   line-height: 1.18;
+.chapter__data {
+   color: #8D9289;
+}
+
+.chapter__name {
+   @media screen and (min-width: 768px) and (max-width: 1279px) {
+      max-width: 189px;
+   }
+}
+
+.chapter__citation {
+   margin-bottom: 8px;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: calc(19 / 16);
    color: #FFFFFF;
 
    @include tablet {
-      margin-bottom: 24px;
-      font-size: 56px;
-   }
-}
-
-.blog__article {
-   padding-bottom: 40px;
-
-   &:last-child {
-      padding-bottom: 48px;
-   }
-}
-
-.blog__img {
-   @include tablet {
-      width: 387px;
-      border-radius: 12px;
-   }
-}
-
-.blog__subtitle {
-   font-weight: 500;
+   margin-bottom: 16px;
    font-size: 24px;
    line-height: 1.16;
-   color: #FFFFFF;
-   margin-bottom: 24px;
+   }
 }
 
-.blog__link {
+.chapter__link {
+   display: block;
    margin-left: auto;
+   width: 82px;
    font-weight: 500;
    font-size: 16px;
-   line-height: 1;
+   line-height: 100%;
    color: #86E543;
 
    @include tablet {
-      margin-top: 16px;
       font-size: 24px;
+      width: 123px;
    }
 }
 
-.blog__text {
-   font-size: 16px;
-   line-height: 1.18;
-   color: #FFFFFF;
+
+// --------------------- positioning ------------------------
+.chapter__list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 23px;
 
    @include tablet {
-   font-size: 24px;
-   line-height: 1.16;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 40px;
    }
 }
 
-.blog__subtext {
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 1;
-   color: #8D9289;
+.chapter__box {
+   @include tablet {
+      display: flex;
+      align-items: flex-end;
+      gap: 40px;
+      margin: 16px 0px;
+   }
+   @include desktop {
+      margin: 0;
+   }
+}
+
+.chapter__wrap-big {
+   @include desktop {
+      display: flex;
+      gap: 120px;
+   }
+}
+
+.chapter__wrap-small {
+   @include desktop {
+      max-width: 693px;
+      max-height: 364px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+}
+
+// ------------------------- image ------------------------------------
+
+.chapter__wrap-image-first,
+.chapter__wrap-image-second {
+   margin: 16px -16px 8px;
 
    @include tablet {
-      margin-bottom: 24px;
-      font-size: 24px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 12px;
+   }
+
+   @include desktop {
+      width: 387px;
+      height: 364px;
    }
 }
