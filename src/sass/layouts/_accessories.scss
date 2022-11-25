@@ -46,18 +46,24 @@
   font-size: 16px;
   line-height: 0.8;
   text-transform: capitalize;
-
+  cursor: pointer;
   background-color: transparent;
   color: $secondary-text-color;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $transition-time,
+    color $transition-time;
+  transition: all 0.25s 0s;
 
   &:hover,
   &:focus {
     background-color: $accent-color;
     color: $green-text-color;
-    box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
+    box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1), 0px 4px 20px rgba(134, 229, 67, 0.4);
+  }
+
+  &:active {
+    transform: translateY(3px);
+    box-shadow: 0px 2px 4px rgba(134, 229, 67, 0.1), 0px 4px 8px rgba(134, 229, 67, 0.4);
   }
 
   @include mobile {
