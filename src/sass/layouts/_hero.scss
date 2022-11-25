@@ -1,3 +1,6 @@
+body {
+}
+
 .hero {
   @include tablet {
     margin: 0 auto;
@@ -10,8 +13,6 @@
 }
 
 .hero__container {
-  padding: 0;
-
   background-image: url(../images/hero-bg/img_hero-bg-mouse_1x.png),
     url(../images/hero-bg/img_hero-bg-headset_1x.png),
     url(../images/hero-bg/img_hero-bg-key_1x.png),
@@ -30,28 +31,15 @@
 
   @include tablet {
     background-image: url(../images/hero-bg/img_hero-bg_2t_1x.png),
-      url(../images/hero-bg/img_hero-bg_t_1x.png);
+      url(../images/hero-bg/img_hero-bg_2x.jpg);
 
-    // background-position: 95% 169px, 83% 75px;
-    // background-repeat: no-repeat;
-    // background-size: 50%, 148%;
-    //! таблетка бекграунд
-
+    background-position: 95% 175px, 70% 100%;
     background-repeat: no-repeat;
-    background-position: 100% 169px, 100% 0;
-    background-size: auto;
-    background-size: 50%, 100%;
-    //!------------------------------------------
+    background-size: 50%, 120%;
+
     @include retina {
       background-image: url(../images/hero-bg/img_hero-bg_2t_2x.png),
-        url(../images/hero-bg/img_hero-bg_t_2x.png);
-
-      // // //! таблетка бекграунд
-      // background-size: 50%, 100%;
-      // background-position: 100% 169px, 100% 0;
-      // // //!------------------------------------------
-
-      // background-size: 50%, 148%;
+        url(../images/hero-bg/img_hero-bg_2x.jpg);
     }
   }
 
@@ -79,12 +67,11 @@
 
   @include tablet {
     align-items: flex-start;
-    padding: 290px 40px 180px 40px;
-    // padding: 290px 40px 208px;
+    padding: 290px 0 180px 0;
   }
 
   @include desktop {
-    padding: 316px 0 209px 142px;
+    padding: 316px 0 209px 102px;
   }
 }
 
