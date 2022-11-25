@@ -86,47 +86,47 @@
   }
 }
 //For section Blog Article (нижче розташування ліній)
-// %bg_lines--bl-art {
-//   background-repeat: no-repeat;
+%bg_lines--bl-art {
+  background-repeat: no-repeat;
 
-//   @media screen and (max-width: 767px) {
-//     background-image: url(/src/images/bg/bg_top-line_m_1x.png),
-//       url(/src/images/bg/bg_bottom-line_m_1x.png);
-//     background-position: -104px 152px,
-//       -99px 159px;
+  @media screen and (max-width: 767px) {
+    background-image: url(/src/images/bg/bg_top-line_m_1x.png),
+      url(/src/images/bg/bg_bottom-line_m_1x.png);
+    background-position: -104px 152px,
+      -99px 159px;
 
-//     @include retina {
-//       background-image: url(/src/images/bg/bg_top-line_m_2x.png),
-//         url(/src/images/bg/bg_bottom-line_m_2x.png);
-//       background-position: -329px 129px, -321px 138px;
-//     }
-//   }
+    @include retina {
+      background-image: url(/src/images/bg/bg_top-line_m_2x.png),
+        url(/src/images/bg/bg_bottom-line_m_2x.png);
+      background-position: -329px 129px, -321px 138px;
+    }
+  }
 
-//   @include tablet {
-//     background-image: url(/src/images/bg/bg_top-line_t_d_1x.png),
-//       url(/src/images/bg/bg_bottom-line_t_d_1x.png);
-//     background-position: -30px 299px, -28px 307px;
+  @include tablet {
+    background-image: url(/src/images/bg/bg_top-line_t_d_1x.png),
+      url(/src/images/bg/bg_bottom-line_t_d_1x.png);
+    background-position: -30px 299px, -28px 307px;
 
-//     @include retina {
-//       background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
-//         url(/src/images/bg/bg_bottom-line_t_d_2x.png),
-//         url(/src/images/bg/bg_t_2x.jpeg);
-//       background-position: -470px 281px, -472px 292px;
-//     }
-//   }
+    @include retina {
+      background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
+        url(/src/images/bg/bg_bottom-line_t_d_2x.png),
+        url(/src/images/bg/bg_t_2x.jpeg);
+      background-position: -470px 281px, -472px 292px;
+    }
+  }
 
-//   @include desktop {
-//     background-image: url(/src/images/bg/bg_top-line_t_d_1x.png),
-//       url(/src/images/bg/bg_bottom-line_t_d_1x.png);
-//     background-position: -26px 298px, -24px 307px;
+  @include desktop {
+    background-image: url(/src/images/bg/bg_top-line_t_d_1x.png),
+      url(/src/images/bg/bg_bottom-line_t_d_1x.png);
+    background-position: -26px 298px, -24px 307px;
 
-//     @include retina {
-//       background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
-//         url(/src/images/bg/bg_bottom-line_t_d_2x.png);
-//       background-position: -468px 281px, -472px 292px;
-//     }
-//   }
-// }
+    @include retina {
+      background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
+        url(/src/images/bg/bg_bottom-line_t_d_2x.png);
+      background-position: -468px 281px, -472px 292px;
+    }
+  }
+}
 
 
 // -------Backgrounds--------
@@ -194,11 +194,11 @@
 %bg_d_1--top {
   @include desktop {
     background-image: url(/src/images/bg/bg_d_1x.jpeg);
-    background-position: left top;
+    background-position: top;
 
     @include retina {
       background-image: url(/src/images/bg/bg_d_2x.jpeg);
-      background-position: left top;
+      background-position: top;
     }
   }
 }

@@ -1,3 +1,19 @@
+.take-order {
+  // background-size: cover;
+  @extend %bg_m_1;
+  @extend %bg_t_1;
+  @extend %bg_d_1--top;
+  padding-bottom: 48px;
+
+  @include tablet {
+    padding-bottom: 120px;
+  }
+}
+
+.take-order__container {
+  @extend %bg_lines;
+}
+
 //!
 
 .wrap {
@@ -46,59 +62,23 @@
   }
 }
 
-.take-order {
-  background-image: url('../images/take-order/background/mob_1x.jpg');
-  background-size: cover;
-  // background-position: center;
-  background-position: top;
-  font-family: $basic-font;
-  padding-top: 144px;
-  padding-bottom: 48px;
-
-  @include retina {
-    background-image: url('../images/take-order/background/mob_2x.jpg');
-  }
-
-  @include tablet {
-    background-image: url('../images/take-order/background/tab_1x.jpg');
-    padding-top: 256px;
-    padding-bottom: 120px;
-
-    @include retina {
-      background-image: url('../images/take-order/background/tab_2x.jpg');
-    }
-  }
-
-  @include desktop {
-    background-image: url('../images/take-order/background/desk_1x.jpg');
-
-    @include retina {
-      background-image: url('../images/take-order/background/desk_2x.jpg');
-    }
-  }
-}
-
 .order {
-  display: block;
-  margin-bottom: 16px;
-
+  // display: block;
+  margin-bottom: 35px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   line-height: calc(28px / 24px);
-
-  color: $main-text-color;
 
   @include tablet {
     margin-bottom: 51px;
-    margin-left: 99px;
-
+    padding-left: 59px;
     font-size: 56px;
     line-height: calc(66px / 56px);
   }
 
   @include desktop {
     margin-bottom: 75px;
-    margin-left: 142px;
+    padding-left: 102px;
   }
 }
 

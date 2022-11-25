@@ -1,8 +1,14 @@
-.contacts-part__container {
+.contacts {
     padding-bottom: 48px;
-    @extend %bg_m_2;
-    @extend %bg_t_1;
-    @extend %bg_d_1-bottom;
+        @extend %bg_t_1;
+        @extend %bg_d_1--bottom;
+        @include tablet {
+            padding-bottom: 120px;
+        }
+}
+
+.contacts-part__container {
+    @extend %bg_lines;
 }
 
     // background: $green-text-color;

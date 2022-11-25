@@ -1,3 +1,12 @@
+.blog {
+   @extend %bg_t_1;
+   @extend %bg_d_3;
+}
+
+.blog__container {
+@extend %bg_lines
+}
+
 .wrap__container {
    margin-right: -16px;
    margin-left: -16px;
@@ -76,30 +85,30 @@
 //   }
 //}
 
-.blog__container {
-         background-repeat: no-repeat;
-         background-position: center;
-         background-size: cover;
-         background-image: url('../images/blog-part/img_blog_bg_t_1x.jpg');
+// .blog__container {
+//          background-repeat: no-repeat;
+//          background-position: center;
+//          background-size: cover;
+//          background-image: url('../images/blog-part/img_blog_bg_t_1x.jpg');
       
-         @media (min-device-pixel-ratio: 2),
-         (-webkit-min-device-pixel-ratio: 2),
-         (min-resolution: 192dpi),
-         (min-resolution: 2dppx) {
-            background-image: url('../images/blog-part/img_blog_bg_t_2x.jpg');
-         }
+//          @media (min-device-pixel-ratio: 2),
+//          (-webkit-min-device-pixel-ratio: 2),
+//          (min-resolution: 192dpi),
+//          (min-resolution: 2dppx) {
+//             background-image: url('../images/blog-part/img_blog_bg_t_2x.jpg');
+//          }
       
-         @media screen and (min-width: 1280px) {
-            background-image: url('../images/blog-part/img_blog_bg_d_1x.jpg');
+//          @media screen and (min-width: 1280px) {
+//             background-image: url('../images/blog-part/img_blog_bg_d_1x.jpg');
       
-            @media (min-device-pixel-ratio: 2),
-            (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-               background-image: url('../images/blog-part/img_blog_bg_d_2x.jpg');
-            }
-         }
-}
+//             @media (min-device-pixel-ratio: 2),
+//             (-webkit-min-device-pixel-ratio: 2),
+//             (min-resolution: 192dpi),
+//             (min-resolution: 2dppx) {
+//                background-image: url('../images/blog-part/img_blog_bg_d_2x.jpg');
+//             }
+//          }
+// }
 
 .blog__title-first {
    margin-bottom: 31px;
