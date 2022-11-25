@@ -1,7 +1,7 @@
 // Backgrounds
 
 // !!!MOBILE!!!
-// For sections: Sale, Accessories, Take-order
+// For sections: Accessories, Take-order
 %bg_m_1 {
   background-color: $main-bg-color;
   background-repeat: no-repeat;
@@ -11,6 +11,27 @@
       url(/src/images/bg/bg_m_1x.jpeg);
     background-position: -104px 152px,
       -99px 159px, 0 104px;
+    @include retina {
+      background-image: url(/src/images/bg/bg_top-line_m_2x.png),
+        url(/src/images/bg/bg_bottom-line_m_2x.png),
+        url(/src/images/bg/bg_m_2x.jpeg);
+      background-position: -329px 129px, -321px 138px, 0 104px;
+    }
+  }
+}
+
+// For section: Sale (вище розташування ліній)
+%bg_m_1_sale {
+  background-color: $main-bg-color;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) {
+    background-image: url(/src/images/bg/bg_top-line_m_1x.png),
+      url(/src/images/bg/bg_bottom-line_m_1x.png),
+      url(/src/images/bg/bg_m_1x.jpeg);
+    background-position: -104px 7px,
+      -99px 14px, 0 0px;
+
     @include retina {
       background-image: url(/src/images/bg/bg_top-line_m_2x.png),
         url(/src/images/bg/bg_bottom-line_m_2x.png),
@@ -84,23 +105,76 @@
 }
 
 // !!!DESKTOP!!!
-// For sections: Sale, Take-order, Contacts
-%bg_d_1 {
+// For section: Contacts
+%bg_d_1-bottom {
   @include desktop {
     background-image: url(/src/images/bg/bg_top-line_t_d_1x.png),
       url(/src/images/bg/bg_bottom-line_t_d_1x.png),
       url(/src/images/bg/bg_d_1x.jpeg);
-    background-position: -26px 298px, -24px 307px, 0 136px;
+    background-position: -26px 298px, -24px 307px, left bottom;
+
     @include retina {
       background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
         url(/src/images/bg/bg_bottom-line_t_d_2x.png),
-        url(/src/images/bg/bg_d_2x.jpeg);background-position: -468px 281px, -472px 292px, 0 136px;
+        url(/src/images/bg/bg_d_2x.jpeg);
+      background-position: -468px 281px, -472px 292px, left bottom;
     }
   }
 }
 
+// For section: Sale (вище розташування ліній)
+%bg_d_1-bottom-high {
+  @include desktop {
+    background-image: url(/src/images/bg/bg_top-line_t_d_1x.png),
+      url(/src/images/bg/bg_bottom-line_t_d_1x.png),
+      url(/src/images/bg/bg_d_1x.jpeg);
+    background-position: -26px 17px, -24px 26px, left bottom;
+
+    @include retina {
+      background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
+        url(/src/images/bg/bg_bottom-line_t_d_2x.png),
+        url(/src/images/bg/bg_d_2x.jpeg);
+      background-position: -468px 0px, -472px 11px, left bottom;
+    }
+  }
+}
+
+// For section: Take-order
+%bg_d_1-top {
+  @include desktop {
+    background-image: url(/src/images/bg/bg_top-line_t_d_1x.png),
+      url(/src/images/bg/bg_bottom-line_t_d_1x.png),
+      url(/src/images/bg/bg_d_1x.jpeg);
+    background-position: -26px 298px, -24px 307px, left top;
+
+    @include retina {
+      background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
+        url(/src/images/bg/bg_bottom-line_t_d_2x.png),
+        url(/src/images/bg/bg_d_2x.jpeg);
+      background-position: -468px 281px, -472px 292px, left top;
+    }
+  }
+}
+
+// For sections: Sale, Take-order, Contacts (optional)
+// %bg_d_2 {
+//   @include desktop {
+//     background-image: url(/src/images/bg/bg_top-line_t_d_1x.png),
+//       url(/src/images/bg/bg_bottom-line_t_d_1x.png),
+//       url(/src/images/bg/bg_d_v2_1x.png);
+//     background-position: -26px 298px, -24px 307px, left bottom;
+
+//     @include retina {
+//       background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
+//         url(/src/images/bg/bg_bottom-line_t_d_2x.png),
+//         url(/src/images/bg/bg_d_v2_2x.png);
+//       background-position: -468px 281px, -472px 292px, left bottom;
+//     }
+//   }
+// }
+
 // For sections: Accessories, Blog
-%bg_d_2 {
+%bg_d_3 {
   @include desktop {
     background-image: url(/src/images/bg/bg_top-line_t_d_1x.png),
       url(/src/images/bg/bg_bottom-line_t_d_1x.png),
