@@ -565,6 +565,7 @@
   }
 }
 .contacts-form__btn {
+  font-weight: 700;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -585,7 +586,8 @@
   &--light {
     width: 173px;
     padding: 16px 0;
-
+    
+    font-weight: inherit;
     border-radius: 16px;
     border: 1px solid $secondary-text-color;
     background-color: $secondary-text-color;
@@ -610,6 +612,8 @@
   &--dark {
     width: 173px;
     padding: 16px 0;
+
+    font-weight: inherit;
 
     border-radius: 16px;
     border: 1px solid $secondary-text-color;
