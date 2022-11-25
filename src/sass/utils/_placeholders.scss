@@ -22,8 +22,7 @@
   
       @include retina {
         background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
-          url(/src/images/bg/bg_bottom-line_t_d_2x.png),
-          url(/src/images/bg/bg_t_2x.jpeg);
+          url(/src/images/bg/bg_bottom-line_t_d_2x.png);
         background-position: -470px 281px, -472px 292px;
       }
     }
@@ -39,6 +38,108 @@
       }
     }
 }
+
+//For sections: Accessories, Take order
+%bg_lines--long {
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) {
+    // background-image: url(/src/images/bg/bg_top-line-long_m_1x.png),
+    //   url(/src/images/bg/bg_bottom-line-long_m_1x.png);
+    // background-position: -104px 152px,
+    //   -99px 159px;
+      
+    background-image: url(/src/images/bg/bg_top-line-long_t_d_1x.png),
+          url(/src/images/bg/bg_bottom-line-long_t_d_1x.png);
+    background-position: -104px 152px,
+          -99px 159px;
+
+    @include retina {
+      // background-image: url(/src/images/bg/bg_top-line-long_m_2x.png),
+      //   url(/src/images/bg/bg_bottom-line-long_m_2x.png);
+      background-image: url(/src/images/bg/bg_top-line-long_t_d_2x.png),
+          url(/src/images/bg/bg_bottom-line-long_t_d_2x.png);
+          background-position: -329px 129px, -321px 138px;
+    }
+  }
+
+  @include tablet {
+    background-image: url(/src/images/bg/bg_top-line-long_t_d_1x.png),
+      url(/src/images/bg/bg_bottom-line-long_t_d_1x.png);
+    background-position: -30px 299px, -28px 307px;
+
+    @include retina {
+      background-image: url(/src/images/bg/bg_top-line-long_t_d_2x.png),
+        url(/src/images/bg/bg_bottom-line-long_t_d_2x.png);
+      background-position: -470px 281px, -472px 292px;
+    }
+  }
+
+  @include desktop {
+    background-image: url(/src/images/bg/bg_top-line-long_t_d_1x.png),
+      url(/src/images/bg/bg_bottom-line-long_t_d_1x.png);
+    background-position: -26px 298px, -24px 307px;
+
+    @include retina {
+      background-image: url(/src/images/bg/bg_top-line-long_t_d_2x.png),
+        url(/src/images/bg/bg_bottom-line-long_t_d_2x.png);
+      background-position: -468px 281px, -472px 292px;
+    }
+  }
+}
+
+//For section: Take order
+// %bg_lines--long {
+//   background-repeat: no-repeat;
+//   background-image: url(/src/images/bg/bg_top-line-long_t_d_1x.png),
+//       url(/src/images/bg/bg_bottom-line-long_t_d_1x.png);
+//     background-position: -30px 299px, -28px 307px;
+
+//   @include retina {
+//       background-image: url(/src/images/bg/bg_top-line-long_t_d_2x.png),
+//         url(/src/images/bg/bg_bottom-line-long_t_d_2x.png);
+//       background-position: -470px 281px, -472px 292px;
+//     }
+
+//   @include desktop {
+//     background-image: url(/src/images/bg/bg_top-line-long_t_d_1x.png),
+//       url(/src/images/bg/bg_bottom-line-long_t_d_1x.png);
+//     background-position: -26px 298px, -24px 307px;
+
+//     @include retina {
+//       background-image: url(/src/images/bg/bg_top-line-long_t_d_2x.png),
+//         url(/src/images/bg/bg_bottom-line-long_t_d_2x.png);
+//       background-position: -468px 281px, -472px 292px;
+//     }
+//   }
+// }
+
+//For section: Accessories (нижче розташування ліній)
+// %bg_lines--long--ac {
+//   background-repeat: no-repeat;
+//   background-image: url(/src/images/bg/bg_top-line-long_t_d_1x.png),
+//     url(/src/images/bg/bg_bottom-line-long_t_d_1x.png);
+//   background-position: -30px 299px, -28px 307px;
+
+//   @include retina {
+//     background-image: url(/src/images/bg/bg_top-line-long_t_d_2x.png),
+//       url(/src/images/bg/bg_bottom-line-long_t_d_2x.png);
+//     background-position: -470px 281px, -472px 292px;
+//   }
+
+//   @include desktop {
+//     background-image: url(/src/images/bg/bg_top-line-long_t_d_1x.png),
+//       url(/src/images/bg/bg_bottom-line-long_t_d_1x.png);
+//     background-position: -26px 298px, -24px 307px;
+
+//     @include retina {
+//       background-image: url(/src/images/bg/bg_top-line-long_t_d_2x.png),
+//         url(/src/images/bg/bg_bottom-line-long_t_d_2x.png);
+//       background-position: -468px 281px, -472px 292px;
+//     }
+//   }
+// }
+
 //For section Sale (вище розташування ліній)
 %bg_lines--sale {
   background-repeat: no-repeat;
