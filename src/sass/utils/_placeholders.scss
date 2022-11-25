@@ -206,13 +206,13 @@
   @include tablet {
     background-image: url(/src/images/bg/bg_top-line_t_d_1x.png),
       url(/src/images/bg/bg_bottom-line_t_d_1x.png);
-    background-position: -30px 299px, -28px 307px;
+    background-position: -30px 350px, -28px 359px;
 
     @include retina {
       background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
         url(/src/images/bg/bg_bottom-line_t_d_2x.png),
         url(/src/images/bg/bg_t_2x.jpeg);
-      background-position: -470px 281px, -472px 292px;
+      background-position: -470px 322px, -472px 332px;
     }
   }
 
