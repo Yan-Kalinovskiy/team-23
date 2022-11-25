@@ -33,6 +33,7 @@
 }
 
 body {
+  background-color: $main-bg-color;
   color: $main-text-color;
   font-family: $basic-font;
 }
@@ -47,7 +48,7 @@ img {
   width: 100%;
   margin: 0 auto;
   padding-left: 16px;
-  padding-right: 16px;  
+  padding-right: 16px;
 
   @include mobile {
     width: 480px;
