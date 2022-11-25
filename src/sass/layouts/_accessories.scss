@@ -1,13 +1,10 @@
 .nav-buttons__container {
-  background-color: #01383a;
-}
-
-.nav-buttons__section {
+  background-color: $main-bg-color;
   padding: 40px 0;
-
-  @include tablet {
-    padding: 120px 0;
-  }
+  
+    @include tablet {
+      padding: 120px 0;
+    }
 }
 
 .nav-buttons__list {
