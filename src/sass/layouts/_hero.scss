@@ -116,7 +116,8 @@ body {
   border-radius: 16px;
   color: $green-text-color;
   background-color: $secondary-text-color;
-  transition: $transition-time;
+  transition: background-color $transition-time,
+      color $transition-time;
 
   &:hover,
   &:focus {

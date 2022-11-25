@@ -200,7 +200,8 @@
     padding: 16px 20px;
     background: #86e543;
     border-radius: 16px;
-    transition: $transition-time;
+    transition: background-color $transition-time,
+        color $transition-time;
 
     &:hover,
     &:focus {

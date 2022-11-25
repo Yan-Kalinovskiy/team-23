@@ -591,7 +591,8 @@
     border: 1px solid $secondary-text-color;
     background-color: $secondary-text-color;
     color: $green-text-color;
-    transition: $transition-time;
+    transition: background-color $transition-time,
+        color $transition-time;
     text-transform: uppercase;
 
     cursor: pointer;
@@ -618,7 +619,8 @@
     border: 1px solid $secondary-text-color;
     background-color: transparent;
     color: $secondary-text-color;
-    transition: $transition-time;
+    transition: background-color $transition-time,
+        color $transition-time;
     text-transform: uppercase;
 
     cursor: pointer;
