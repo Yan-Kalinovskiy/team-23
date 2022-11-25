@@ -1,5 +1,4 @@
 .take-order {
-  // background-size: cover;
   @extend %bg_m_1;
   @extend %bg_t_1;
   @extend %bg_d_1--top;
@@ -11,7 +10,7 @@
 }
 
 .take-order__container {
-  @extend %bg_lines;
+  @extend %bg_lines--long;
 }
 
 //!
