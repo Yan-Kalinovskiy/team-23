@@ -33,8 +33,10 @@
 }
 
 body {
+  background-color: $main-bg-color;
   color: $main-text-color;
   font-family: $basic-font;
+  background-color: $main-bg-color;
 }
 
 img {
@@ -47,7 +49,7 @@ img {
   width: 100%;
   margin: 0 auto;
   padding-left: 16px;
-  padding-right: 16px;  
+  padding-right: 16px;
 
   @include mobile {
     width: 480px;
@@ -61,5 +63,12 @@ img {
 
   @include desktop {
     width: 1280px;
+  }
+}
+
+.add-padding {
+  padding-top: 144px;
+  @include tablet {
+    padding-top: 256px;
   }
 }
