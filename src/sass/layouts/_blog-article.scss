@@ -24,6 +24,10 @@
   line-height: calc(28 / 24);
   color: $main-text-color;
 
+  @media screen and (max-width: 767px) {
+    margin-bottom: 31px;
+  }
+
   @include tablet {
     font-size: 56px;
     line-height: 1;
