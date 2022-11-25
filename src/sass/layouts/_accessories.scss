@@ -1,12 +1,16 @@
-.nav-buttons__container {
-  margin-bottom: -1px;
+.accessories {
   padding-bottom: 48px;
-
-  background-color: $main-bg-color;
-
+  margin-bottom: -1px;
   @include tablet {
     padding-bottom: 120px;
   }
+  @extend %bg_m_1;
+  @extend %bg_t_1;
+  @extend %bg_d_3;
+}
+
+.nav-buttons__container {
+  @extend %bg_lines;
 }
 
 .nav-buttons__list {

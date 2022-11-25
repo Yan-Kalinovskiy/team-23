@@ -1,12 +1,13 @@
-.article__container {
-  font-family: $basic-font;
-  font-style: normal;
-  background-image: url(../images/background/article_background.jpg);
+.article {
   padding-bottom: 48px;
 
   @include tablet {
     padding-bottom: 120px;
   }
+}
+
+.article__container {
+  @extend %bg_lines--bl-art;
   // padding: 40px 16px 48px;
 
   // @include tablet {
