@@ -1,26 +1,22 @@
 .footer {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.footer > .container {
-  position: relative;
-  width: 100%;
-  padding: 25px 32px 25px 16px;
-
   background-color: #001414;
-
-  @include tablet {
-    width: 100%;
-    padding: 40px 50px 40px 40px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  @include desktop {
-    width: 100%;
-    padding: 40px 179px 40px 40px;
-  }
 }
+
+.footer__container {
+    position: relative;
+    padding: 25px 32px 25px 16px;
+
+    @include tablet {
+      padding: 40px 50px 40px 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include desktop {
+      padding: 40px 179px 40px 40px;
+    }
+  }
 
 .footer__logo-container {
   max-width: 117px;
