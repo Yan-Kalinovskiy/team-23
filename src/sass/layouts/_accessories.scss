@@ -14,7 +14,7 @@
 }
 
 .nav-buttons__list {
-  margin: 0 auto;
+  margin: 0 auto 32px;
   padding: 0;
 
   display: flex;
@@ -27,6 +27,7 @@
   }
 
   @include tablet {
+    margin-bottom: 72px;
     gap: 53px;
   }
 
@@ -79,33 +80,24 @@
   }
 }
 
-.cards__title-container {
-  max-width: 320px;
+// .cards__title-container {
+//   margin: 32px auto 27px;
 
-  margin: 32px auto 27px;
-
-  display: flex;
-  justify-content: flex-start;
-
-  @include tablet {
-    max-width: 100%;
-    padding: 0 0 0 126px;
-    margin: 72px 0 51px 0;
-  }
-}
+//   @include tablet {
+//     padding: 62px 0 0 126px;
+//     margin: 0 0 51px 0;
+//   }
+// }
 
 .cards__main-title {
-  margin: 0;
-
-  display: block;
-
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
-  line-height: 0.8;
-  color: $main-text-color;
-
+  line-height: 1.17;
+  margin-bottom: 27px;
+  
   @include tablet {
     font-size: 56px;
+    margin-bottom: 51px;
   }
 }
 
