@@ -77,14 +77,12 @@
   line-height: 1;
   color: $main-text-color;
   padding: 5px 0;
+  transition: border $transition-time, border-color 150ms linear;
 
   &:hover,
   &:focus {
-    align-items: center;
-    border-bottom: 1px solid #86e543;
+    border-bottom: 1px solid $accent-color;
     border-color: $accent-color;
-    transform: scale(1);
-    transition: 0.3s;
   }
 }
 
