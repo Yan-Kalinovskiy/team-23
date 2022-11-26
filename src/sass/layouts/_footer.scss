@@ -30,11 +30,6 @@
   font-size: 24px;
   line-height: 1.17;
   color: #ffffff;
-
-  // &:hover,
-  &:focus {
-    color: #177a30;
-  }
 }
 
 .footer-section__card {
@@ -48,17 +43,11 @@
 }
 
 .footer-section__link {
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
   color: #ffffff;
   display: block;
-
-  // &:hover,
-  &:focus {
-    color: #177a30;
-  }
 }
 
 .footer-container__socials {
@@ -107,15 +96,8 @@
 }
 
 .footer-contacts__link {
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  // text-transform: capitalize;
   color: #8d9289;
-
-  // &:hover,
-  &:focus {
-    color: #177a30;
-  }
 }
