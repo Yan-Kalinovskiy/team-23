@@ -80,10 +80,9 @@
 
   &:hover,
   &:focus {
-    color: $accent-color;
     align-items: center;
     border-bottom: 1px solid #86e543;
-    border-radius: 5px;
+    border-color: $accent-color;
     transform: scale(1);
     transition: 0.3s;
   }

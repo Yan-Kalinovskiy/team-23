@@ -147,8 +147,7 @@
 
     @include retina {
       background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
-        url(/src/images/bg/bg_bottom-line_t_d_2x.png),
-        url(/src/images/bg/bg_t_2x.jpeg);
+        url(/src/images/bg/bg_bottom-line_t_d_2x.png);
       background-position: -470px 0px, -472px 11px;
     }
   }
@@ -189,8 +188,7 @@
 
     @include retina {
       background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
-        url(/src/images/bg/bg_bottom-line_t_d_2x.png),
-        url(/src/images/bg/bg_t_2x.jpeg);
+        url(/src/images/bg/bg_bottom-line_t_d_2x.png);
       background-position: -470px 322px, -472px 332px;
     }
   }
@@ -257,11 +255,11 @@
 %bg_d_1--bottom {
   @include desktop {
     background-image: url(/src/images/bg/bg_d_1x.jpeg);
-    background-position: left bottom;
+    background-position: left 105px;
 
     @include retina {
       background-image: url(/src/images/bg/bg_d_2x.jpeg);
-      background-position: left bottom;
+      background-position: left 105px;
     }
   }
 }
@@ -270,11 +268,11 @@
 %bg_d_1--top {
   @include desktop {
     background-image: url(/src/images/bg/bg_d_1x.jpeg);
-    background-position: top;
+    background-position: left 80px;
 
     @include retina {
       background-image: url(/src/images/bg/bg_d_2x.jpeg);
-      background-position: top;
+      background-position: left 80px;
     }
   }
 }
