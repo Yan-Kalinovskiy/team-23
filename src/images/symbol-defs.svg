@@ -1,4 +1,3 @@
-<!--accessories-->
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-Desktop-1" viewBox="0 0 577 32">
@@ -28,23 +27,19 @@
 <symbol id="icon-Tablet-2" viewBox="0 0 346 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 </symbol>
-</defs>
-</svg>
+
 
 <!--blog-part-->
-<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs>
+
 <symbol id="icon-blog" viewBox="0 0 208 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M16 0h48c8.837 0 16 7.163 16 16s-7.163 16-16 16h-48c-8.837 0-16-7.163-16-16s7.163-16 16-16z"></path>
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M144 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M208 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 </symbol>
-</defs>
-</svg>
+
 
 <!--footer-->
-<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs>
+
 <symbol id="icon-social-button" viewBox="0 0 33 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M17.149 0c8.837 0 16 7.163 16 16s-7.163 16-16 16c-8.837 0-16-7.163-16-16s7.163-16 16-16z"></path>
 <path fill="#001414" style="fill: var(--color2, #001414)" d="M25.149 9c0 0.552-0.448 1-1 1s-1-0.448-1-1c0-0.552 0.448-1 1-1s1 0.448 1 1z"></path>
@@ -58,24 +53,20 @@
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M17.149 0c8.837 0 16 7.163 16 16s-7.163 16-16 16c-8.837 0-16-7.163-16-16s7.163-16 16-16z"></path>
 <path fill="#001414" style="fill: var(--color2, #001414)" d="M23.4 10.987c0.689 0.175 1.231 0.693 1.415 1.351 0.335 1.192 0.335 3.68 0.335 3.68s0 2.487-0.333 3.679c-0.185 0.657-0.727 1.153-1.416 1.329-1.247 0.32-6.251 0.32-6.251 0.32s-5.003 0-6.251-0.32c-0.689-0.176-1.231-0.672-1.415-1.329-0.333-1.192-0.333-3.68-0.333-3.68s0-2.487 0.333-3.679c0.201-0.669 0.732-1.18 1.4-1.348l0.014-0.003c1.249-0.32 6.255-0.32 6.255-0.32s5.003 0 6.249 0.32zM15.513 13.759v4.516l4.181-2.259-4.181-2.257z"></path>
 </symbol>
-</defs>
-</svg>
+
 
 <!--header-->
-<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
-<defs>
+
 <symbol id="icon-btn-close" viewBox="0 0 32 32">
 <path fill="none" stroke="#86e543" style="stroke:var(--color1, #86e543)" stroke-linecap="round" stroke-width="3.556" d="M29.63 30.222 2.371 1.778m27.259 0L2.371 30.222"/>
 </symbol>
 <symbol id="icon-btn-open" viewBox="0 0 48 32">
 <path fill="#86e543" style="fill:var(--color1, #86e543)" d="M45.467 13.333H2.534c-1.399 0-2.533.681-2.533 1.52v.16c0 .839 1.134 1.52 2.533 1.52h42.933c1.399 0 2.533-.681 2.533-1.52v-.16c0-.839-1.134-1.52-2.533-1.52zM45.467 26.667H2.534c-1.399 0-2.533.681-2.533 1.52v.16c0 .839 1.134 1.52 2.533 1.52h42.933c1.399 0 2.533-.681 2.533-1.52v-.16c0-.839-1.134-1.52-2.533-1.52zM45.467 0H2.534C1.135 0 .001.681.001 1.52v.16c0 .839 1.134 1.52 2.533 1.52h42.933C46.866 3.2 48 2.519 48 1.68v-.16C48 .681 46.866 0 45.467 0z"/>
 </symbol>
-</defs>
-</svg>
+
 
 <!--modal-->
-<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs>
+
 <symbol id="icon-modal-close" viewBox="0 0 32 32">
 <path fill="none" stroke="#86e543" style="stroke: var(--color1, #86e543)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.4118" d="M21.294 10.706l-10.588 10.588M10.706 10.706l10.588 10.588M16 30.706c8.122 0 14.706-6.584 14.706-14.706s-6.584-14.706-14.706-14.706c-8.122 0-14.706 6.584-14.706 14.706s6.584 14.706 14.706 14.706z"></path>
 </symbol>

@@ -1,173 +1,236 @@
 .blog {
-   @extend %bg_t_1;
-   @extend %bg_d_3;
+  @extend %bg_t_1;
+  @extend %bg_d_3;
+
+  padding-bottom: 48px;
+
+  @include tablet {
+    padding-bottom: 120px;
+  }
 }
 
 .blog__container {
-@extend %bg_lines
+  @extend %bg_lines;
 }
 
 // ----------------- hidden images ------------------------
 
 .chapter__wrap-image-first {
-   @media screen and (max-width: 1279px) {
-      display: none;
-   }
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
 }
 
 .chapter__wrap-image-second {
-   @include desktop {
-      display: none;
-   }
+  @include desktop {
+    display: none;
+  }
 }
 
 .blog__title {
-   margin-bottom: 31px;
-   font-size: 24px;
-   font-weight: 500;
-   line-height: calc(28 / 24);
-   color: $main-text-color;
+  margin-bottom: 31px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: calc(28 / 24);
+  color: $main-text-color;
 
-   @include tablet {
-      margin-bottom: 67px;
-      font-size: 56px;
-      line-height: calc(66 / 56);
-   }
-   @include tablet {
-      margin-bottom: 75px;
-   }
+  @include tablet {
+    margin-left: 59px;
+    margin-bottom: 67px;
+    font-size: 56px;
+    line-height: calc(66 / 56);
+  }
+  @include tablet {
+    margin-left: 142px;
+    margin-bottom: 75px;
+  }
 }
 
 .chapter__title {
-   font-size: 24px;
-   font-weight: 500;
-   line-height: calc(28 / 24);
-   color: $main-text-color;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: calc(28 / 24);
+  color: $main-text-color;
 
-   @include tablet {
-      font-size: 56px;
-      line-height: 1;
-   }
+  @include tablet {
+    font-size: 56px;
+    line-height: 1;
+  }
 }
 
 .chapter__author {
-   display: flex;
-   flex-direction: column;
-   gap: 8px;
-   margin-bottom: 16px;
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 100%;
-   color: $main-text-color;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: $main-text-color;
 
-   @include tablet {
-      width: 261px;
-      font-size: 24px;
-      gap: 32px;
-   }
-   @include desktop {
-      flex-direction: row;
-      width: 692px;
-      justify-content: space-between;
-   }
+  @include tablet {
+    width: 261px;
+    font-size: 24px;
+    gap: 32px;
+  }
+  @include desktop {
+    flex-direction: row;
+    width: 692px;
+    justify-content: space-between;
+  }
 }
 
 .chapter__data {
-   color: #8D9289;
+  color: #8d9289;
 }
 
 .chapter__name {
-   @media screen and (min-width: 768px) and (max-width: 1279px) {
-      max-width: 189px;
-   }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    max-width: 189px;
+  }
 }
 
 .chapter__citation {
-   margin-bottom: 8px;
-   font-size: 16px;
-   font-weight: 400;
-   line-height: calc(19 / 16);
-   color: #FFFFFF;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: calc(19 / 16);
+  color: #ffffff;
 
-   @include tablet {
-   margin-bottom: 16px;
-   font-size: 24px;
-   line-height: 1.16;
-   }
+  @include tablet {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .chapter__link {
-   display: block;
-   margin-left: auto;
-   width: 82px;
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 100%;
-   color: #86E543;
+  display: block;
+  margin-left: auto;
+  width: 82px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #86e543;
 
-   @include tablet {
-      font-size: 24px;
-      width: 123px;
-   }
+  @include tablet {
+    font-size: 24px;
+    width: 123px;
+  }
 }
-
 
 // --------------------- positioning ------------------------
 .chapter__list {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 23px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
 
-   @include tablet {
-      display: flex;
-      flex-wrap: wrap;
-      row-gap: 40px;
-   }
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
 }
 
 .chapter__box {
-   @include tablet {
-      display: flex;
-      align-items: flex-end;
-      gap: 40px;
-      margin: 16px 0px;
-   }
-   @include desktop {
-      margin: 0;
-   }
+  @include tablet {
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+    margin: 16px 0px;
+  }
+  @include desktop {
+    margin: 0;
+  }
 }
 
 .chapter__wrap-big {
-   @include desktop {
-      display: flex;
-      gap: 120px;
-   }
+  @include desktop {
+    display: flex;
+    gap: 120px;
+  }
 }
 
 .chapter__wrap-small {
-   @include desktop {
-      max-width: 693px;
-      max-height: 364px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-   }
+  @include desktop {
+    max-width: 693px;
+    max-height: 364px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 // ------------------------- image ------------------------------------
 
 .chapter__wrap-image-first,
 .chapter__wrap-image-second {
-   margin: 16px -16px 8px;
+  margin: 16px -16px 8px;
 
-   @include tablet {
-      margin: 0;
-      overflow: hidden;
-      border-radius: 12px;
-   }
+  @include tablet {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 12px;
+  }
 
-   @include desktop {
-      width: 387px;
-      height: 364px;
-   }
+  @include desktop {
+    width: 387px;
+    height: 364px;
+  }
+}
+
+//------------------------Loading----------------------------------------
+
+.pointer__loading {
+  margin: 48px auto 0;
+
+  position: relative;
+  width: 100px;
+  height: 16px;
+
+  @include tablet {
+    margin: 35px auto 0;
+  }
+
+  @include desktop {
+    margin: 48px auto 0;
+  }
+}
+
+.pointer {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  display: block;
+
+  border-radius: 30px;
+
+  background: $main-text-color;
+
+  animation: loading 1000ms ease alternate-reverse infinite;
+}
+
+.pointer_1 {
+  width: 40px;
+  height: 16px;
+}
+
+.pointer_2 {
+  left: 24px;
+}
+
+@keyframes loading {
+  to {
+    transform: translateX(60px);
+  }
+}
+
+.pointer_1 {
+  animation-name: loading;
+  animation-delay: 500ms;
+}
+
+.pointer_2,
+.pointer_3 {
+  animation-name: loading;
 }

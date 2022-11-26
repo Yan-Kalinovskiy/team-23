@@ -8,14 +8,6 @@
 
 .article__container {
   @extend %bg_lines--bl-art;
-  // padding: 40px 16px 48px;
-
-  // @include tablet {
-  //   padding: 256px 40px;
-  // }
-  // @include desktop {
-  //   padding: 242px 40px 120px;
-  // }
 }
 
 .article__header {
@@ -23,6 +15,10 @@
   font-size: 24px;
   line-height: calc(28 / 24);
   color: $main-text-color;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 31px;
+  }
 
   @include tablet {
     font-size: 56px;
@@ -50,13 +46,9 @@
 }
 
 .article-image {
-  width: 100%;
-  height: 100%;
-
-  @include tablet {
-    width: 100%;
-    height: 100%;
-  }
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .article__subtitles {
@@ -103,11 +95,6 @@
 
 .article__date {
   color: #8d9289;
-}
-
-.article-image {
-  width: 100%;
-  height: 100%;
 }
 
 .blog-article__description {
