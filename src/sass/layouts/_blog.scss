@@ -27,6 +27,8 @@
   }
 }
 
+// ----------------- text ------------------------
+
 .blog__title {
   margin-bottom: 31px;
   font-size: 24px;
@@ -35,14 +37,14 @@
   color: $main-text-color;
 
   @include tablet {
-    margin-left: 99px;
+    margin-left: 61px;
     margin-bottom: 67px;
     font-size: 56px;
     line-height: calc(66 / 56);
   }
-  @include tablet {
-    margin-left: 142px;
-    margin-bottom: 75px;
+  @include desktop{
+    margin-left: 102px;
+    margin-bottom: 67px;
   }
 }
 
