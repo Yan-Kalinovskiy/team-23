@@ -255,11 +255,11 @@
 %bg_d_1--bottom {
   @include desktop {
     background-image: url(/src/images/bg/bg_d_1x.jpeg);
-    background-position: left bottom;
+    background-position: left 105px;
 
     @include retina {
       background-image: url(/src/images/bg/bg_d_2x.jpeg);
-      background-position: left bottom;
+      background-position: left 105px;
     }
   }
 }
@@ -268,11 +268,11 @@
 %bg_d_1--top {
   @include desktop {
     background-image: url(/src/images/bg/bg_d_1x.jpeg);
-    background-position: top;
+    background-position: left 80px;
 
     @include retina {
       background-image: url(/src/images/bg/bg_d_2x.jpeg);
-      background-position: top;
+      background-position: left 80px;
     }
   }
 }
