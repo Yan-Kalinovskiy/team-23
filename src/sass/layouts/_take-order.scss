@@ -13,8 +13,6 @@
   @extend %bg_lines--long;
 }
 
-//!
-
 .wrap {
   max-width: 288px;
   margin: 0 auto;
@@ -27,7 +25,7 @@
     max-width: 1280px;
   }
 }
-//!
+
 .take-order__wrap {
   @include tablet {
     display: flex;
@@ -50,7 +48,6 @@
   }
 }
 
-//!
 .cover-image {
   align-items: center;
   gap: 24px;
@@ -122,13 +119,9 @@
 .prices {
   display: flex;
   flex-direction: row;
-  //!
+  
   @include tablet {
-    // display: block;
-    // flex-direction: column;
-    // margin-left: 24px;
     margin-top: 69px;
-
     display: flex;
     gap: 56px;
     justify-content: flex-start;
@@ -159,7 +152,7 @@
   text-decoration-line: line-through;
   color: $grey-text-color;
   margin-top: 16px;
-  //!
+  
   @include tablet {
     font-size: 24px;
     margin: 0;
@@ -174,10 +167,9 @@
   margin-top: 24px;
   margin-bottom: 16px;
   margin-left: 60px;
-  // !
+
   @include tablet {
     margin: 0;
-
     font-size: 48px;
   }
 }
@@ -211,7 +203,6 @@
 
 .image-order-set {
   border-radius: 4px;
-  // min-width: 60px;
 }
 
 .subwrap-btn {
@@ -272,11 +263,6 @@
   }
 }
 
-// !!!!!!!!!!!!!!!!!!!!CONTACTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! //
-// .form-box {
-//   margin-top: 32px;
-// }
-
 .form-container {
   max-width: 288px;
   margin: 32px auto 0;
@@ -297,7 +283,6 @@
   flex-direction: column;
   gap: 40px;
   max-width: 320px;
-  // width: 100%;
 
   margin: 0 auto;
 
@@ -311,7 +296,6 @@
 
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
-
     gap: 20px;
     flex-direction: row;
   }
@@ -325,16 +309,13 @@
 
 .contacts-form__title {
   margin-bottom: 16px;
-
   font-weight: 600;
   font-size: 24px;
   line-height: calc(28px / 24px);
-
   color: $secondary-text-color;
 
   @include tablet {
     margin-bottom: 48px;
-
     font-size: 36px;
     line-height: calc(42px / 36px);
   }
@@ -351,15 +332,12 @@
 .contacts-form__input {
   width: 100%;
   padding-left: 60px;
-
   outline: transparent;
   border: none;
   border-radius: 0%;
   border-bottom: 1px solid $secondary-text-color;
-
   background-color: transparent;
   color: $main-text-color;
-
   appearance: none;
   cursor: pointer;
 }
@@ -367,21 +345,16 @@
   position: absolute;
   left: 0;
   bottom: 4px;
-
   font-size: 16px;
   line-height: calc(20px / 16px);
-
   text-transform: capitalize;
   appearance: none;
   color: $main-text-color;
-
   cursor: pointer;
-
   transition: transform 250ms linear;
 }
 
 .contacts-textarea__wrap {
-  // position: relative;
   @media screen and (min-width: 1280px) {
     width: 50%;
   }
@@ -395,26 +368,20 @@
   position: relative;
   top: -4px;
   cursor: pointer;
-
   margin-bottom: 4px;
-
   font-size: 16px;
   line-height: calc(20px / 16px);
-
   color: #cdcdcd;
 }
 
 .contacts-textarea {
   width: 100%;
   height: 95px;
-  // padding: 10px;
-
   outline: none;
   border-radius: 0px;
   border: 1px solid $secondary-text-color;
   background-color: transparent;
   color: #cdcdcd;
-
   resize: none;
 
   @media screen and (min-width: 768px) {
@@ -426,11 +393,6 @@
   }
 }
 
-// ++++++++++++++++++++++++++++++++++++++++++++++++
-
-// .form__select[data-state='active'] .form__select__content {
-//   margin-top: 12px;
-// }
 .form__select {
   width: 100%;
 
@@ -444,17 +406,14 @@
 
     .form__select__content {
       opacity: 1;
-
       border-bottom: 1px solid $secondary-text-color;
     }
 
     .form__select__label + .form__select__input + .form__select__label {
       max-height: 30px;
       border-top-width: 1px;
-
       font-size: 16px;
       line-height: calc(20px / 16px);
-
       text-transform: capitalize;
     }
   }
@@ -464,16 +423,11 @@
   width: 100%;
   height: 60%;
   padding-bottom: 4px;
-
   border-bottom: 1px solid $secondary-text-color;
-
   font-size: 16px;
   line-height: calc(20px / 16px);
-
   text-transform: capitalize;
-
   color: $main-text-color;
-
   cursor: pointer;
 
   &::before {
@@ -482,26 +436,21 @@
     position: absolute;
     bottom: -4px;
     right: 0;
-
     display: block;
     width: 18px;
     height: 13px;
     transition: all 0.3s ease-out;
-
     background-image: url(../images/take-order/form-icon/form-icon.png);
     background-repeat: no-repeat;
-    // background-color: $main-text-color;
-
     transform: translate(0px, -50%) rotate(0deg);
   }
 }
 
 .form__select__content {
   transition: all 0.3s ease-out;
-
   opacity: 0;
-  // z-index: 8;
 }
+
 .form__select__input {
   display: none;
 }
@@ -513,16 +462,12 @@
   height: 40px;
   max-height: 0px;
   color: $main-text-color;
-
   transition: all 0.2s ease-out;
-
   cursor: pointer;
-
   overflow: hidden;
 
   &:hover {
     background-color: #17573d;
-
     color: $main-text-color;
   }
 }
@@ -539,12 +484,9 @@
     background-image: url(../images/take-order/form-icon/form-icon.png);
     background-repeat: no-repeat;
     background-size: auto;
-
     pointer-events: none;
   }
 }
-
-//! Btn
 
 .subwrap-btn {
   font-weight: 700;
@@ -584,7 +526,6 @@
   &--light {
     width: 173px;
     padding: 16px 0;
-    
     font-weight: inherit;
     border-radius: 16px;
     border: 1px solid $secondary-text-color;
@@ -595,7 +536,6 @@
     text-transform: uppercase;
 
     cursor: pointer;
-
     @include tablet {
       width: 306px;
       height: 70px;
@@ -611,9 +551,7 @@
   &--dark {
     width: 173px;
     padding: 16px 0;
-
     font-weight: inherit;
-
     border-radius: 16px;
     border: 1px solid $secondary-text-color;
     background-color: transparent;
@@ -621,7 +559,6 @@
     transition: background-color $transition-time,
         color $transition-time;
     text-transform: uppercase;
-
     cursor: pointer;
 
     @include tablet {

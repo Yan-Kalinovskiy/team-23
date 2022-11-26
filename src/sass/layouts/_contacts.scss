@@ -64,13 +64,12 @@
 .contacts-part__contacts {
     margin-bottom: 24px;
     @include tablet {
-       margin-bottom: 40px;
-    //    margin-right: 200px;
-   }
+        margin-bottom: 40px;
+    }
 
     @include desktop {
-       margin-bottom: 0;
-       margin-right: 0;
+        margin-bottom: 0;
+        margin-right: 0;
     }
 }
 
@@ -134,7 +133,6 @@
     color: $main-text-color;
 
     @include tablet {
-        // padding-bottom: 0;
         font-size: 24px;
         line-height: calc(28 / 24);
     }
