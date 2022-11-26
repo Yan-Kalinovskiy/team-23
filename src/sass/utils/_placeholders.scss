@@ -147,8 +147,7 @@
 
     @include retina {
       background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
-        url(/src/images/bg/bg_bottom-line_t_d_2x.png),
-        url(/src/images/bg/bg_t_2x.jpeg);
+        url(/src/images/bg/bg_bottom-line_t_d_2x.png);
       background-position: -470px 0px, -472px 11px;
     }
   }
@@ -189,8 +188,7 @@
 
     @include retina {
       background-image: url(/src/images/bg/bg_top-line_t_d_2x.png),
-        url(/src/images/bg/bg_bottom-line_t_d_2x.png),
-        url(/src/images/bg/bg_t_2x.jpeg);
+        url(/src/images/bg/bg_bottom-line_t_d_2x.png);
       background-position: -470px 322px, -472px 332px;
     }
   }
