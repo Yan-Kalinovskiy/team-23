@@ -146,8 +146,7 @@
   line-height: 1.17;
   text-align: center;
   color: #01383a;
-  transition: background-color $transition-time,
-      color $transition-time;
+  transition: box-shadow $transition-time;
 
   &:hover,
   &:focus {
