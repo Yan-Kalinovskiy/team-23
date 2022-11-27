@@ -77,12 +77,11 @@
   line-height: 1;
   color: $main-text-color;
   padding: 5px 0;
-  transition: border $transition-time, border-color 150ms linear;
+  transition: border 500ms ease-in 350ms;
 
   &:hover,
   &:focus {
     border-bottom: 1px solid $accent-color;
-    border-color: $accent-color;
   }
 }
 
@@ -197,8 +196,7 @@
     padding: 16px 20px;
     background: #86e543;
     border-radius: 16px;
-    transition: background-color $transition-time,
-        color $transition-time;
+    transition: box-shadow $transition-time;
 
     &:hover,
     &:focus {

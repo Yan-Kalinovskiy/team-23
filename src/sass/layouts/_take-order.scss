@@ -223,14 +223,15 @@
 }
 
 .btn-light {
+  margin-bottom: 16px;
   color: $green-text-color;
-  background-color: $secondary-text-color;
-  border: 1px solid $secondary-text-color;
+  background-color: $accent-color;
+  border: 1px solid $accent-color;
   border-radius: 16px;
   padding: 16px 42px;
   text-transform: uppercase;
   cursor: pointer;
-  margin-bottom: 16px;
+  transition: box-shadow $transition-time;
 
   @include tablet {
     padding: 16px 64px;
@@ -246,11 +247,12 @@
 .btn-dark {
   color: $secondary-text-color;
   background-color: transparent;
-  border: 1px solid $secondary-text-color;
+  border: 1px solid $accent-color;
   border-radius: 16px;
   padding: 16px 42px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: box-shadow $transition-time;
 
   @include tablet {
     padding: 16px 64px;
@@ -528,11 +530,10 @@
     padding: 16px 0;
     font-weight: inherit;
     border-radius: 16px;
-    border: 1px solid $secondary-text-color;
-    background-color: $secondary-text-color;
+    border: 1px solid $accent-color;
+    background-color: $accent-color;
     color: $green-text-color;
-    transition: background-color $transition-time,
-        color $transition-time;
+    transition: box-shadow $transition-time;
     text-transform: uppercase;
 
     cursor: pointer;
@@ -553,11 +554,10 @@
     padding: 16px 0;
     font-weight: inherit;
     border-radius: 16px;
-    border: 1px solid $secondary-text-color;
+    border: 1px solid $accent-color;
     background-color: transparent;
     color: $secondary-text-color;
-    transition: background-color $transition-time,
-        color $transition-time;
+    transition: box-shadow $transition-time;
     text-transform: uppercase;
     cursor: pointer;
 
@@ -569,7 +569,6 @@
     &:hover,
     &:focus {
       box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
-      border-radius: 16px;
     }
   }
 }
