@@ -16,7 +16,8 @@
   }
 
   function openModalContacts() {
-refs.modalContacts.classList.remove("is-hidden");
+    refs.modalContacts.classList.remove("is-hidden");
+    refs.modalContacts.classList.add("with-transition");
   }
 
   function onContactsFormSubmit(event) {

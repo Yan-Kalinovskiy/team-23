@@ -8,20 +8,35 @@
     closeModalAddBtn: document.querySelector("[data-modal-add-close]"),
     modalAdd: document.querySelector("[data-modal-add]"),
     modalAddLink: document.querySelector("[data-modal-add-link]"),
+    form: document.querySelector(".contacts-form"),
   };
 
-  refs.openModalBuyBtn.addEventListener("click", toggleModalBuy);
-  refs.closeModalBuyBtn.addEventListener("click", toggleModalBuy);
-  refs.modalBuyLink.addEventListener("click", toggleModalBuy);
-  refs.openModalAddBtn.addEventListener("click", toggleModalAdd);
-  refs.closeModalAddBtn.addEventListener("click", toggleModalAdd);
-  refs.modalAddLink.addEventListener("click", toggleModalAdd);
-
-  function toggleModalBuy() {
-    refs.modalBuy.classList.toggle("is-hidden");
+  refs.form.addEventListener("submit", onOrderFormSubmit);
+  refs.closeModalBuyBtn.addEventListener("click", removeModalBuy);
+  refs.modalBuyLink.addEventListener("click", removeModalBuy);
+  refs.closeModalAddBtn.addEventListener("click", removeModalAdd);
+  refs.modalAddLink.addEventListener("click", removeModalAdd);
+  
+  function onOrderFormSubmit (event) {
+    event.preventDefault();
+    refs.form.reset(); 
+    if (event.submitter === event.target[9]) {
+      refs.modalBuy.classList.remove("is-hidden");
+      refs.modalBuy.classList.add("with-transition");
+      return
+    } 
+    if (event.submitter === event.target[10]) {
+      refs.modalAdd.classList.remove("is-hidden");
+      refs.modalAdd.classList.add("with-transition");
+      return
+    } 
   }
 
-  function toggleModalAdd() {
-    refs.modalAdd.classList.toggle("is-hidden");
+  function removeModalBuy() {
+    refs.modalBuy.classList.add("is-hidden");
+  }
+
+  function removeModalAdd() {
+    refs.modalAdd.classList.add("is-hidden");
   }
 })();

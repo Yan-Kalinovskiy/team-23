@@ -281,11 +281,7 @@
 }
 
 .contacts-form {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
   max-width: 320px;
-
   margin: 0 auto;
 
   @media screen and (min-width: 480px) {
@@ -298,6 +294,16 @@
 
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
+  }
+}
+
+.contacts-form__main-wrap {
+display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+
+  @media screen and (min-width: 1280px) {
     gap: 20px;
     flex-direction: row;
   }
