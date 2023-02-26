@@ -12,24 +12,16 @@
 
   refs.openModalBuyBtn.addEventListener("click", toggleModalBuy);
   refs.closeModalBuyBtn.addEventListener("click", toggleModalBuy);
-  refs.modalBuyLink.addEventListener("click", removeModalBuy);
+  refs.modalBuyLink.addEventListener("click", toggleModalBuy);
   refs.openModalAddBtn.addEventListener("click", toggleModalAdd);
   refs.closeModalAddBtn.addEventListener("click", toggleModalAdd);
-  refs.modalAddLink.addEventListener("click", removeModalAdd);
+  refs.modalAddLink.addEventListener("click", toggleModalAdd);
 
   function toggleModalBuy() {
     refs.modalBuy.classList.toggle("is-hidden");
   }
 
-  function removeModalBuy() {
-    refs.modalBuy.classList.add("is-hidden");
-  }
-
   function toggleModalAdd() {
     refs.modalAdd.classList.toggle("is-hidden");
-  }
-
-  function removeModalAdd() {
-    refs.modalAdd.classList.add("is-hidden");
   }
 })();
